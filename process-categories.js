@@ -353,7 +353,7 @@ async function navigateToBulkCollection(browser, context, page) {
 
       // Click save button
       console.log('💾 Clicking save button...');
-      await page.locator('button:has-text("저장하기"), input[value="저장하기"]').click();
+      await page.locator('a.btn-layerSave, button:has-text("저장하기"), input[value="저장하기"]').click();
 
       // Wait for popup to close and check completion message
       console.log('⏳ Waiting for save completion...');
