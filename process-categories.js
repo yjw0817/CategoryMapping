@@ -332,21 +332,9 @@ async function navigateToBulkCollection(browser, context, page) {
       console.log('⏳ Waiting 3 seconds...');
       await page.waitForTimeout(3000);
 
-      // Click URL search button and handle new tab/popup
+      // Click URL search button (let popups open/close automatically)
       console.log('🔎 Clicking search button...');
-
-      // Listen for new pages/tabs
-      const [newPage] = await Promise.all([
-        context.waitForEvent('page', { timeout: 5000 }).catch(() => null),
-        page.locator('a[onclick*="set_search_extension"]').click()
-      ]);
-
-      // If a new tab was opened, close it and stay on current page
-      if (newPage) {
-        console.log('📑 New tab detected, closing it...');
-        await newPage.close();
-        console.log('✅ Staying on current tab');
-      }
+      await page.locator('a[onclick*="set_search_extension"]').click();
 
       // Wait for FIRST scraping process (after clicking search button)
       console.log('⏳ Waiting for initial product scraping...');
