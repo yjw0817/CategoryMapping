@@ -3,7 +3,7 @@ taskkill /F /IM chrome.exe 2>$null
 Start-Sleep -Seconds 3
 
 Write-Host "`nStarting Chrome with Remote Debugging on port 9223..." -ForegroundColor Cyan
-Start-Process "C:\Program Files\Google\Chrome\Application\chrome.exe" -ArgumentList "--remote-debugging-port=9223", "--user-data-dir=$env:LOCALAPPDATA\Google\Chrome\User Data", "about:blank"
+Start-Process "C:\Program Files\Google\Chrome\Application\chrome.exe" -ArgumentList "--remote-debugging-port=9223", "--user-data-dir=$env:LOCALAPPDATA\Google\Chrome\User Data", "--no-first-run", "--no-default-browser-check"
 
 Write-Host "Waiting for Chrome to start..." -ForegroundColor Yellow
 Start-Sleep -Seconds 8
