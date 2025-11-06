@@ -317,10 +317,11 @@ async function navigateToBulkCollection(browser, context, page) {
     console.log('='.repeat(60));
 
     try {
-      // Refresh page to clear any previous state
-      console.log('🔄 Refreshing page...');
-      await page.reload({ waitUntil: 'networkidle' });
-      console.log('✅ Page refreshed\n');
+      // Navigate to bulk collection page to clear any previous state
+      console.log('🔄 Navigating to bulk collection page...');
+      await page.goto('https://tmg4696.mycafe24.com/mall/admin/shop/getGoods.php');
+      await page.waitForLoadState('networkidle');
+      console.log('✅ Page loaded\n');
 
       // Fill URL search input
       console.log('🔍 Entering URL...');
