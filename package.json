@@ -14,7 +14,8 @@
   "license": "ISC",
   "scripts": {
     "login": "node login.js",
-    "process": "node process-categories.js"
+    "process": "powershell -ExecutionPolicy Bypass -File .\\크롬시작.ps1 && node process-categories.js",
+    "process-only": "node process-categories.js"
   },
   "dependencies": {
     "playwright": "^1.40.0",
