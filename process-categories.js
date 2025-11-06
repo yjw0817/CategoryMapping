@@ -25,10 +25,11 @@ async function showMainMenu() {
     console.log('='.repeat(60));
     console.log('1. 사이트 대량상품수집');
     console.log('2. 카테고리 매핑');
-    console.log('3. 닫기');
+    console.log('3. 수집조건 수정');
+    console.log('4. 닫기');
     console.log('='.repeat(60));
 
-    rl.question('선택하세요 (1-3): ', (answer) => {
+    rl.question('선택하세요 (1-4): ', (answer) => {
       rl.close();
       resolve(answer.trim());
     });
@@ -442,6 +443,68 @@ async function navigateToCategoryManagement(page) {
   });
   await page.waitForTimeout(1000);
   console.log('✅ Site selected\n');
+}
+
+// Modify collection conditions
+async function modifyCollectionConditions(page) {
+  const rl = createReadlineInterface();
+
+  console.log('\n' + '='.repeat(60));
+  console.log('⚙️ 수집조건 수정');
+  console.log('='.repeat(60));
+
+  // Get search keyword from user
+  const keyword = await new Promise((resolve) => {
+    rl.question('검색어를 입력하세요: ', (answer) => {
+      resolve(answer.trim());
+    });
+  });
+
+  // Get collection count from user
+  const collectionCount = await new Promise((resolve) => {
+    rl.question('수집수를 입력하세요: ', (answer) => {
+      resolve(answer.trim());
+    });
+  });
+
+  // Confirm with user
+  console.log('\n입력하신 정보:');
+  console.log(`검색어: ${keyword}`);
+  console.log(`수집수: ${collectionCount}`);
+
+  const confirm = await new Promise((resolve) => {
+    rl.question('\n진행하시겠습니까? (Y/N): ', (answer) => {
+      rl.close();
+      resolve(answer.trim().toUpperCase());
+    });
+  });
+
+  if (confirm !== 'Y') {
+    console.log('\n❌ 취소되었습니다.\n');
+    return;
+  }
+
+  try {
+    // Navigate to collection conditions page
+    console.log('\n🔄 수집조건 페이지로 이동 중...');
+    await page.goto('https://tmg4696.mycafe24.com/mall/admin/admin_group.php');
+    await page.waitForLoadState('networkidle');
+    console.log('✅ 페이지 로드 완료\n');
+
+    // Enter search keyword
+    console.log(`🔍 검색어 입력: ${keyword}`);
+    const keywordInput = page.locator('input[name="sch_keyword"]');
+    await keywordInput.fill(keyword);
+
+    // Click search button
+    console.log('🔎 검색 버튼 클릭...');
+    await page.locator('a[onclick*="search_filter"]').click();
+    await page.waitForLoadState('networkidle');
+    console.log('✅ 검색 완료\n');
+
+  } catch (error) {
+    console.error('❌ 오류 발생:', error.message);
+  }
 }
 
 async function processCategories(categoryList, context, page) {
@@ -936,7 +999,7 @@ async function main() {
   while (true) {
     const choice = await showMainMenu();
 
-    if (choice === '3') {
+    if (choice === '4') {
       console.log('\n👋 Exiting...');
       if (browser) {
         await browser.close();
@@ -966,7 +1029,17 @@ async function main() {
       continue;
     }
 
-    console.log('❌ Invalid choice. Please select 1, 2, or 3.');
+    if (choice === '3') {
+      try {
+        // Modify collection conditions
+        await modifyCollectionConditions(page);
+      } catch (error) {
+        console.error('❌ Error:', error.message);
+      }
+      continue;
+    }
+
+    console.log('❌ Invalid choice. Please select 1, 2, 3, or 4.');
   }
 }
 
