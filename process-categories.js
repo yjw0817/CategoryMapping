@@ -203,118 +203,119 @@ async function loginToSite(contextOrPage) {
 async function navigateToBulkCollection(browser, context, page) {
   console.log('🛒 Starting bulk product collection...');
 
-  // First, navigate to bulk collection page
+  // Ask user for CSV file path
+  const rl = createReadlineInterface();
+  const csvPath = await new Promise((resolve) => {
+    rl.question('CSV 파일 경로를 입력하세요 (기본: ./상품 카테고리 수집 URL/상품 카테고리 수집 URL - 11번가 아마존(섬김Trade).csv): ', (answer) => {
+      rl.close();
+      resolve(answer.trim() || './상품 카테고리 수집 URL/상품 카테고리 수집 URL - 11번가 아마존(섬김Trade).csv');
+    });
+  });
+
+  // Read CSV file
+  console.log(`📄 Reading CSV file: ${csvPath}...`);
+  let csvContent;
+  try {
+    csvContent = fs.readFileSync(csvPath, 'utf-8');
+  } catch (error) {
+    console.error(`❌ Failed to read CSV file: ${error.message}`);
+    return;
+  }
+
+  // Parse CSV
+  const records = parse(csvContent, {
+    columns: false,
+    skip_empty_lines: true,
+    from: 3 // Skip header rows (rows 1-2)
+  });
+
+  console.log(`✅ Found ${records.length} URLs to process\n`);
+
+  // Navigate to bulk collection page
   console.log('📦 Navigating to bulk product collection page...');
   await page.goto('https://tmg4696.mycafe24.com/mall/admin/shop/getGoods.php');
   await page.waitForLoadState('networkidle');
   console.log('✅ Bulk collection page loaded\n');
 
-  // Then open Google Sheets in new tab
-  const sheetUrl = process.env.CATEGORY_COLLECT_URL;
-  const sheetName = process.env.SHEET || '11번가 아마존(섬김Trade)';
+  // Process each URL
+  for (let i = 0; i < records.length; i++) {
+    const record = records[i];
+    const filterName = record[2]; // Column C (index 2)
+    const url = record[3]; // Column D (index 3)
 
-  console.log(`📊 Opening Google Sheet: ${sheetName}...`);
-  const sheetPage = await context.newPage();
-  await sheetPage.goto(sheetUrl);
-  await sheetPage.waitForLoadState('domcontentloaded');
-
-  // Wait for Google Sheets to be interactive
-  console.log('⏳ Waiting for Google Sheets to load...');
-  await sheetPage.waitForTimeout(3000);
-
-  // Wait for the sheet container to be visible
-  try {
-    await sheetPage.waitForSelector('.docs-sheet-container-bar', { timeout: 10000 });
-    console.log('✅ Sheet container loaded');
-  } catch (e) {
-    console.log('⚠️ Sheet container not found, continuing anyway...');
-  }
-
-  await sheetPage.waitForTimeout(2000);
-
-  // Take screenshot for debugging
-  await sheetPage.screenshot({ path: 'screenshots/google_sheet_before.png', fullPage: true });
-  console.log('📸 Screenshot saved: google_sheet_before.png');
-
-  // Navigate to specific sheet by name
-  console.log(`📄 Looking for sheet tab: ${sheetName}...`);
-
-  try {
-    // Wait a bit more for sheets to load
-    await sheetPage.waitForTimeout(2000);
-
-    // Use getByRole to find the button with the sheet name
-    const sheetTab = sheetPage.getByRole('button', { name: sheetName });
-
-    // Check if the tab is visible and click it
-    const isVisible = await sheetTab.isVisible({ timeout: 3000 }).catch(() => false);
-
-    if (isVisible) {
-      console.log(`✅ Found sheet tab: ${sheetName}`);
-      await sheetTab.click();
-      await sheetPage.waitForTimeout(3000);
-      console.log(`✅ Switched to sheet: ${sheetName}`);
-
-      // Take screenshot after switching
-      await sheetPage.screenshot({ path: 'screenshots/google_sheet_after.png', fullPage: true });
-      console.log('📸 Screenshot saved: google_sheet_after.png');
-    } else {
-      console.log(`⚠️ Sheet tab not visible, using current sheet`);
-    }
-  } catch (error) {
-    console.log(`⚠️ Could not switch to sheet "${sheetName}": ${error.message}`);
-    console.log('⚠️ Using current visible sheet');
-  }
-
-  // Read first URL from the sheet by clicking cell D3
-  console.log('🔍 Reading first URL from sheet...');
-
-  // Navigate to cell D3
-  await sheetPage.keyboard.press('Control+Home'); // Go to A1
-  await sheetPage.waitForTimeout(500);
-  await sheetPage.keyboard.press('ArrowRight'); // Move to B1
-  await sheetPage.keyboard.press('ArrowRight'); // Move to C1
-  await sheetPage.keyboard.press('ArrowRight'); // Move to D1
-  await sheetPage.keyboard.press('ArrowDown'); // Move to D2
-  await sheetPage.keyboard.press('ArrowDown'); // Move to D3
-  await sheetPage.waitForTimeout(500);
-
-  // Read from formula bar
-  const firstUrl = await sheetPage.evaluate(() => {
-    // Read from the formula bar using .cell-input class
-    const formulaBar = document.querySelector('.cell-input');
-
-    if (formulaBar) {
-      const text = formulaBar.textContent || formulaBar.innerText || '';
-      return text.trim();
+    if (!url || !url.startsWith('http')) {
+      console.log(`⚠️ Skipping row ${i + 3}: No valid URL`);
+      continue;
     }
 
-    return null;
-  });
+    console.log(`\n${'='.repeat(60)}`);
+    console.log(`📊 Processing ${i + 1}/${records.length}`);
+    console.log(`📝 필터이름: ${filterName}`);
+    console.log(`🔗 URL: ${url}`);
+    console.log('='.repeat(60));
 
-  if (!firstUrl) {
-    console.error('❌ No URL found in the sheet');
-    await sheetPage.close();
-    return;
+    try {
+      // Fill URL search input
+      console.log('🔍 Entering URL...');
+      const urlInput = page.locator('input[placeholder*="데이터를 수집하실 검색페이지"]');
+      await urlInput.fill(url);
+
+      // Click URL search button
+      console.log('🔎 Clicking search button...');
+      await page.locator('text=URL 상품검색하기').click();
+
+      // Wait for popup to open and close
+      console.log('⏳ Waiting for popup...');
+      await page.waitForTimeout(3000);
+
+      // Click "검색된 상품 모두저장" button
+      console.log('💾 Clicking save all products button...');
+      await page.locator('text=검색된 상품 모두저장').click();
+      await page.waitForTimeout(2000);
+
+      // Fill in the filter name in the popup
+      console.log(`📝 Entering filter name: ${filterName}...`);
+      const filterNameInput = page.locator('input[name="search_filter_name"], input#search_filter_name');
+      await filterNameInput.fill(filterName);
+
+      // Check and select "11아마존" if not selected
+      console.log('✅ Checking "11아마존" option...');
+      const checkbox = page.locator('input[type="checkbox"][value*="11아마존"], input[type="checkbox"][value*="11amazon"]');
+      const isChecked = await checkbox.isChecked().catch(() => false);
+      if (!isChecked) {
+        await checkbox.check();
+        console.log('✅ Selected "11아마존"');
+      } else {
+        console.log('✅ "11아마존" already selected');
+      }
+
+      // Click save button
+      console.log('💾 Clicking save button...');
+      await page.locator('button:has-text("저장하기"), input[value="저장하기"]').click();
+
+      // Wait for popup to close and check completion message
+      console.log('⏳ Waiting for save completion...');
+      await page.waitForTimeout(5000);
+
+      // Check for completion message in layer_page div
+      const completionMessage = await page.locator('#layer_page').textContent().catch(() => '');
+      if (completionMessage.includes('신규상품의 저장이 완료되었습니다')) {
+        console.log('✅ Save completed successfully!');
+      } else {
+        console.log('⚠️ Completion message not found, but continuing...');
+      }
+
+      console.log(`✅ Completed ${i + 1}/${records.length}\n`);
+
+    } catch (error) {
+      console.error(`❌ Error processing URL: ${error.message}`);
+      console.log('⚠️ Continuing to next URL...\n');
+    }
   }
 
-  console.log(`✅ Found URL: ${firstUrl}`);
-
-  // Close the sheet tab
-  await sheetPage.close();
-
-  // Go back to the bulk collection page (already loaded)
-  console.log('🔎 Searching for product with URL...');
-  await page.bringToFront();
-
-  // Find and fill the search input for URL search
-  const urlInput = page.locator('input[placeholder*="데이터를 수집하실 검색페이지"]');
-  await urlInput.fill(firstUrl);
-
-  // Click the URL search button
-  await page.locator('text=URL 상품검색하기').click();
-  await page.waitForLoadState('networkidle');
-  console.log('✅ Search completed\n');
+  console.log('\n' + '='.repeat(60));
+  console.log('🎉 All URLs processed!');
+  console.log('='.repeat(60));
 }
 
 // Navigate to category management page
