@@ -275,7 +275,7 @@ async function navigateToBulkCollection(browser, context, page) {
 
       // Fill in the filter name in the popup
       console.log(`📝 Entering filter name: ${filterName}...`);
-      const filterNameInput = page.locator('input[name="search_filter_name"], input#search_filter_name');
+      const filterNameInput = page.locator('input#filter_name');
       await filterNameInput.fill(filterName);
 
       // Check and select "11아마존" if not selected
