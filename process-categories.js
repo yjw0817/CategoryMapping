@@ -340,13 +340,15 @@ async function navigateToBulkCollection(browser, context, page) {
       const filterNameInput = page.locator('input#filter_name');
       await filterNameInput.fill(filterName);
 
-      // Check and select "11아마존" if not selected
+      // Select "11아마존" from dropdown if not selected
       console.log('✅ Checking "11아마존" option...');
-      const checkbox = page.locator('input[type="checkbox"][value*="11아마존"], input[type="checkbox"][value*="11amazon"]');
-      const isChecked = await checkbox.isChecked().catch(() => false);
-      if (!isChecked) {
-        await checkbox.check();
-        console.log('✅ Selected "11아마존"');
+      const selectDropdown = page.locator('select#goods_limit_templet');
+      const currentValue = await selectDropdown.inputValue().catch(() => '');
+
+      if (!currentValue || currentValue === '') {
+        // Select "11아마존" option - find option with text containing "11아마존"
+        await selectDropdown.selectOption({ label: /11아마존/ });
+        console.log('✅ Selected "11아마존" from dropdown');
       } else {
         console.log('✅ "11아마존" already selected');
       }
