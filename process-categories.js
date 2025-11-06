@@ -317,6 +317,12 @@ async function navigateToBulkCollection(browser, context, page) {
     console.log('='.repeat(60));
 
     try {
+      // Refresh page to clear any previous state
+      console.log('🔄 Refreshing page...');
+      await page.reload();
+      await page.waitForLoadState('networkidle');
+      console.log('✅ Page refreshed\n');
+
       // Fill URL search input
       console.log('🔍 Entering URL...');
       const urlInput = page.locator('input[placeholder*="데이터를 수집하실 검색페이지"]');
