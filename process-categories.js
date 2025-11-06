@@ -188,13 +188,25 @@ async function loginToSite(contextOrPage) {
 
   const loginUrl = process.env.TARGET_SITES || 'https://tmg4696.mycafe24.com/mall/admin/admin.php';
 
-  console.log('🔐 Logging in...');
+  console.log('🔐 Checking login status...');
   await page.goto(loginUrl);
-  await page.locator('input[name="login_id"]').fill(process.env.ID || 'yjw0817');
-  await page.locator('input[name="login_pass"]').fill(process.env.PW || 'workhard1!');
-  await page.getByRole('button', { name: '로그인' }).click();
   await page.waitForLoadState('networkidle');
-  console.log('✅ Login successful\n');
+
+  // Check if already logged in by looking for login page elements
+  const loginIdInput = await page.locator('input[name="login_id"]').count();
+
+  if (loginIdInput > 0) {
+    // Login page detected - need to login
+    console.log('🔑 Login required, logging in...');
+    await page.locator('input[name="login_id"]').fill(process.env.ID || 'yjw0817');
+    await page.locator('input[name="login_pass"]').fill(process.env.PW || 'workhard1!');
+    await page.getByRole('button', { name: '로그인' }).click();
+    await page.waitForLoadState('networkidle');
+    console.log('✅ Login successful\n');
+  } else {
+    // Already logged in
+    console.log('✅ Already logged in, skipping login\n');
+  }
 
   return { context, page };
 }
