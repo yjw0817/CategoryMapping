@@ -369,16 +369,38 @@ async function navigateToBulkCollection(browser, context, page) {
       console.log('💾 Clicking save button...');
       await page.locator('a.btn-layerSave, button:has-text("저장하기"), input[value="저장하기"]').click();
 
-      // Wait for popup to close and check completion message
-      console.log('⏳ Waiting for save completion...');
-      await page.waitForTimeout(5000);
+      // Wait for scraping process to start (goods_process.gif appears)
+      console.log('⏳ Waiting for product scraping to start...');
+      await page.waitForTimeout(2000);
 
-      // Check for completion message in layer_page div
-      const completionMessage = await page.locator('#layer_page').textContent().catch(() => '');
-      if (completionMessage.includes('신규상품의 저장이 완료되었습니다')) {
+      // Wait for goods_process.gif to disappear (scraping complete)
+      console.log('🔄 Waiting for product scraping to complete...');
+      try {
+        await page.waitForSelector('img[src*="goods_process.gif"]', { state: 'visible', timeout: 5000 });
+        console.log('📥 Scraping in progress...');
+        await page.waitForSelector('img[src*="goods_process.gif"]', { state: 'hidden', timeout: 300000 }); // 5 minutes max
+        console.log('✅ Scraping completed!');
+      } catch (error) {
+        console.log('ℹ️ goods_process.gif not detected or already completed');
+      }
+
+      // Wait for completion message in layer_page div
+      console.log('⏳ Waiting for save completion message...');
+      try {
+        await page.waitForFunction(
+          () => {
+            const layerPage = document.querySelector('#layer_page');
+            if (layerPage) {
+              const text = layerPage.textContent || '';
+              return text.includes('신규상품의 저장이 완료되었습니다');
+            }
+            return false;
+          },
+          { timeout: 60000 } // 1 minute timeout
+        );
         console.log('✅ Save completed successfully!');
-      } else {
-        console.log('⚠️ Completion message not found, but continuing...');
+      } catch (error) {
+        console.log('⚠️ Completion message not found within timeout, but continuing...');
       }
 
       console.log(`✅ Completed ${i + 1}/${records.length}\n`);
