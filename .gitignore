@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Chrome profile
+chrome-automation-profile/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+logs/
+
+# Screenshots
+screenshots/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+nul
