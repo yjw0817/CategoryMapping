@@ -1,0 +1,3523 @@
+[
+  {
+    "index": 7,
+    "FullPath": "가전/디지털 > 디지털가전 > 무선전화기",
+    "ID": "1150018",
+    "Name": "무선전화기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '무선전화기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 8,
+    "FullPath": "가전/디지털 > 디지털가전 > 인터폰/비디오폰",
+    "ID": "1150021",
+    "Name": "인터폰/비디오폰",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '인터폰/비디오폰' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 13,
+    "FullPath": "가전/디지털 > 생활가전 > 냉장고",
+    "ID": "1150025",
+    "Name": "냉장고",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '냉장고' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 14,
+    "FullPath": "가전/디지털 > 생활가전 > 세탁기/건조기",
+    "ID": "1150026",
+    "Name": "세탁기/건조기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '세탁기/건조기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 17,
+    "FullPath": "가전/디지털 > 영상가전 > 빔/스크린",
+    "ID": "1150029",
+    "Name": "빔/스크린",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '빔/스크린' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 25,
+    "FullPath": "가전/디지털 > 음향가전 > 보이스리코더",
+    "ID": "1153982",
+    "Name": "보이스리코더",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '보이스리코더' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 33,
+    "FullPath": "가전/디지털 > 계절가전 > 가습기 액세서리",
+    "ID": "1167840",
+    "Name": "가습기 액세서리",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '가습기 액세서리' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 37,
+    "FullPath": "가전/디지털 > 계절가전 > 가습기",
+    "ID": "1150014",
+    "Name": "가습기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '가습기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 38,
+    "FullPath": "가전/디지털 > 계절가전 > 에어컨",
+    "ID": "1150007",
+    "Name": "에어컨",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '에어컨' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 39,
+    "FullPath": "가전/디지털 > 계절가전 > 제습기",
+    "ID": "1150015",
+    "Name": "제습기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '제습기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 41,
+    "FullPath": "가전/디지털 > 계절가전 > 욕실 난방기",
+    "ID": "1150003",
+    "Name": "욕실 난방기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '욕실 난방기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 43,
+    "FullPath": "가전/디지털 > 계절가전 > 모기/해충 퇴치기",
+    "ID": "1150013",
+    "Name": "모기/해충 퇴치기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '모기/해충 퇴치기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 44,
+    "FullPath": "가전/디지털 > 계절가전 > 라디에이터",
+    "ID": "1149998",
+    "Name": "라디에이터",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '라디에이터' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 45,
+    "FullPath": "가전/디지털 > 계절가전 > 전기요",
+    "ID": "1150005",
+    "Name": "전기요",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '전기요' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 53,
+    "FullPath": "가전/디지털 > 스마트기기 > 스마트 체중계",
+    "ID": "1150054",
+    "Name": "스마트 체중계",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '스마트 체중계' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 56,
+    "FullPath": "가전/디지털 > 건강가전 > 건강 보조 기기",
+    "ID": "1149994",
+    "Name": "건강 보조 기기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '건강 보조 기기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 57,
+    "FullPath": "컴퓨터 > 컴퓨터용품 > 노트북 액세서리",
+    "ID": "1150375",
+    "Name": "노트북 액세서리",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '노트북 액세서리' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 58,
+    "FullPath": "컴퓨터 > 컴퓨터용품 > PC 관리용품",
+    "ID": "1150384",
+    "Name": "PC 관리용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: 'PC 관리용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 60,
+    "FullPath": "컴퓨터 > 컴퓨터용품 > CPU",
+    "ID": "1150383",
+    "Name": "CPU",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: 'CPU' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 63,
+    "FullPath": "컴퓨터 > 컴퓨터용품 > PC 액세서리",
+    "ID": "1150386",
+    "Name": "PC 액세서리",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: 'PC 액세서리' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 64,
+    "FullPath": "컴퓨터 > 컴퓨터용품 > 쿨러",
+    "ID": "1150382",
+    "Name": "쿨러",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '쿨러' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 66,
+    "FullPath": "컴퓨터 > 컴퓨터용품 > PC 케이스",
+    "ID": "1150388",
+    "Name": "PC 케이스",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: 'PC 케이스' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 67,
+    "FullPath": "컴퓨터 > 컴퓨터용품 > PC 확장카드",
+    "ID": "1150390",
+    "Name": "PC 확장카드",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: 'PC 확장카드' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 68,
+    "FullPath": "컴퓨터 > 컴퓨터용품 > 노트북 받침대",
+    "ID": "1150374",
+    "Name": "노트북 받침대",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '노트북 받침대' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 69,
+    "FullPath": "컴퓨터 > 컴퓨터용품 > PC 변환젠더",
+    "ID": "1150385",
+    "Name": "PC 변환젠더",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: 'PC 변환젠더' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 70,
+    "FullPath": "컴퓨터 > 컴퓨터용품 > 영상편집보드",
+    "ID": "1150379",
+    "Name": "영상편집보드",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '영상편집보드' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 71,
+    "FullPath": "컴퓨터 > 컴퓨터용품 > PC 파워",
+    "ID": "1150389",
+    "Name": "PC 파워",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: 'PC 파워' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 72,
+    "FullPath": "컴퓨터 > 컴퓨터용품 > 소프트웨어",
+    "ID": "1150378",
+    "Name": "소프트웨어",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '소프트웨어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 73,
+    "FullPath": "컴퓨터 > 컴퓨터주변기기 > 마우스 주변기기",
+    "ID": "1150400",
+    "Name": "마우스 주변기기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '마우스 주변기기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 75,
+    "FullPath": "컴퓨터 > 컴퓨터주변기기 > 마우스/키보드 세트",
+    "ID": "1150399",
+    "Name": "마우스/키보드 세트",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '마우스/키보드 세트' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 76,
+    "FullPath": "컴퓨터 > 컴퓨터주변기기 > 네트워크 장비",
+    "ID": "1150428",
+    "Name": "네트워크 장비",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '네트워크 장비' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 77,
+    "FullPath": "컴퓨터 > 컴퓨터주변기기 > CCTV/감시카메라",
+    "ID": "1150423",
+    "Name": "CCTV/감시카메라",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: 'CCTV/감시카메라' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 78,
+    "FullPath": "컴퓨터 > 컴퓨터주변기기 > 스캐너",
+    "ID": "1150412",
+    "Name": "스캐너",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '스캐너' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 79,
+    "FullPath": "컴퓨터 > 컴퓨터주변기기 > 키보드",
+    "ID": "1150401",
+    "Name": "키보드",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '키보드' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 81,
+    "FullPath": "컴퓨터 > 컴퓨터주변기기 > 마우스",
+    "ID": "1150398",
+    "Name": "마우스",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '마우스' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 82,
+    "FullPath": "컴퓨터 > 컴퓨터주변기기 > USB 허브",
+    "ID": "1150426",
+    "Name": "USB 허브",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: 'USB 허브' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 83,
+    "FullPath": "컴퓨터 > 컴퓨터주변기기 > 젠더",
+    "ID": "1150405",
+    "Name": "젠더",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '젠더' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 84,
+    "FullPath": "컴퓨터 > 컴퓨터주변기기 > CCTV 주변기기",
+    "ID": "1150424",
+    "Name": "CCTV 주변기기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: 'CCTV 주변기기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 85,
+    "FullPath": "컴퓨터 > 컴퓨터주변기기 > PC 스피커",
+    "ID": "1150425",
+    "Name": "PC 스피커",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: 'PC 스피커' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 86,
+    "FullPath": "컴퓨터 > 컴퓨터주변기기 > 스위칭 허브",
+    "ID": "1150411",
+    "Name": "스위칭 허브",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '스위칭 허브' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 87,
+    "FullPath": "컴퓨터 > 컴퓨터주변기기 > 화상카메라",
+    "ID": "1150422",
+    "Name": "화상카메라",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '화상카메라' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 88,
+    "FullPath": "컴퓨터 > 컴퓨터주변기기 > 공유기",
+    "ID": "1150427",
+    "Name": "공유기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '공유기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 89,
+    "FullPath": "컴퓨터 > 컴퓨터주변기기 > 유무선 공유기",
+    "ID": "1150413",
+    "Name": "유무선 공유기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '유무선 공유기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 90,
+    "FullPath": "컴퓨터 > 컴퓨터주변기기 > 네트워크 카메라",
+    "ID": "1150394",
+    "Name": "네트워크 카메라",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '네트워크 카메라' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 91,
+    "FullPath": "컴퓨터 > 컴퓨터주변기기 > 소프트웨어",
+    "ID": "1150421",
+    "Name": "소프트웨어",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '소프트웨어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 92,
+    "FullPath": "컴퓨터 > 컴퓨터주변기기 > 랜카드",
+    "ID": "1150395",
+    "Name": "랜카드",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '랜카드' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 95,
+    "FullPath": "컴퓨터 > 태블릿 액세서리 > 태블릿 케이스/보호필름",
+    "ID": "1150348",
+    "Name": "태블릿 케이스/보호필름",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '태블릿 케이스/보호필름' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 96,
+    "FullPath": "컴퓨터 > 프린터/복합기 > 프린터 기타기기",
+    "ID": "1150418",
+    "Name": "프린터 기타기기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '프린터/복합기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 97,
+    "FullPath": "컴퓨터 > 프린터/복합기 > 3D프린터",
+    "ID": "1150416",
+    "Name": "3D프린터",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '프린터/복합기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 98,
+    "FullPath": "컴퓨터 > 프린터/복합기 > 레이저 프린터",
+    "ID": "1150417",
+    "Name": "레이저 프린터",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '프린터/복합기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 99,
+    "FullPath": "컴퓨터 > 프린터/복합기 > 잉크젯 프린터",
+    "ID": "1150415",
+    "Name": "잉크젯 프린터",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '프린터/복합기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 100,
+    "FullPath": "컴퓨터 > 프린터/복합기 > 잉크젯 복합기",
+    "ID": "1150414",
+    "Name": "잉크젯 복합기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '프린터/복합기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 101,
+    "FullPath": "컴퓨터 > 저장기기 > USB 메모리",
+    "ID": "1150357",
+    "Name": "USB 메모리",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '저장기기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 102,
+    "FullPath": "컴퓨터 > 저장기기 > 메모리카드",
+    "ID": "1150350",
+    "Name": "메모리카드",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '저장기기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 103,
+    "FullPath": "컴퓨터 > 저장기기 > 외장하드",
+    "ID": "1150352",
+    "Name": "외장하드",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '저장기기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 104,
+    "FullPath": "컴퓨터 > 저장기기 > ODD/공디스크",
+    "ID": "1150356",
+    "Name": "ODD/공디스크",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '저장기기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 105,
+    "FullPath": "컴퓨터 > 저장기기 > 메모리카드리더기",
+    "ID": "1150351",
+    "Name": "메모리카드리더기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '저장기기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 106,
+    "FullPath": "컴퓨터 > 저장기기 > 외장하드 주변기기",
+    "ID": "1150353",
+    "Name": "외장하드 주변기기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '저장기기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 107,
+    "FullPath": "컴퓨터 > 저장기기 > HDD",
+    "ID": "1150354",
+    "Name": "HDD",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '저장기기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 108,
+    "FullPath": "컴퓨터 > 저장기기 > SSD",
+    "ID": "1211917",
+    "Name": "SSD",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '저장기기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 109,
+    "FullPath": "컴퓨터 > 저장기기 > 기타 저장기기",
+    "ID": "1150349",
+    "Name": "기타 저장기기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '저장기기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 110,
+    "FullPath": "컴퓨터 > 저장기기 > NAS",
+    "ID": "1150355",
+    "Name": "NAS",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '저장기기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 112,
+    "FullPath": "컴퓨터 > 모니터 > 모니터 주변기기",
+    "ID": "1150369",
+    "Name": "모니터 주변기기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '모니터' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 113,
+    "FullPath": "컴퓨터 > 모니터 > 일반 모니터",
+    "ID": "1150365",
+    "Name": "일반 모니터",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '모니터' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 114,
+    "FullPath": "컴퓨터 > 모니터 > 대형/상업용 모니터",
+    "ID": "1150368",
+    "Name": "대형/상업용 모니터",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '모니터' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 115,
+    "FullPath": "컴퓨터 > 모니터 > 게이밍 모니터",
+    "ID": "1150367",
+    "Name": "게이밍 모니터",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '모니터' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 116,
+    "FullPath": "컴퓨터 > 노트북/PC > 노트북",
+    "ID": "1150358",
+    "Name": "노트북",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '노트북/PC' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 117,
+    "FullPath": "컴퓨터 > 노트북/PC > 태블릿 PC",
+    "ID": "1150364",
+    "Name": "태블릿 PC",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '노트북/PC' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 118,
+    "FullPath": "컴퓨터 > 노트북/PC > 브랜드  PC",
+    "ID": "1150360",
+    "Name": "브랜드  PC",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '노트북/PC' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 119,
+    "FullPath": "컴퓨터 > 노트북/PC > 미니  PC",
+    "ID": "1150359",
+    "Name": "미니  PC",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '노트북/PC' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 120,
+    "FullPath": "컴퓨터 > 노트북/PC > 일체형  PC",
+    "ID": "1150361",
+    "Name": "일체형  PC",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '노트북/PC' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 121,
+    "FullPath": "컴퓨터 > 노트북/PC > 조립  PC",
+    "ID": "1150362",
+    "Name": "조립  PC",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '노트북/PC' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 122,
+    "FullPath": "컴퓨터 > 노트북/PC > 서버/워크스테이션",
+    "ID": "1150363",
+    "Name": "서버/워크스테이션",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '노트북/PC' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 123,
+    "FullPath": "컴퓨터 > 컴퓨터부품 > 그래픽카드",
+    "ID": "1150370",
+    "Name": "그래픽카드",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '컴퓨터부품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 124,
+    "FullPath": "컴퓨터 > 컴퓨터부품 > 메인보드",
+    "ID": "1150372",
+    "Name": "메인보드",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '컴퓨터부품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 125,
+    "FullPath": "컴퓨터 > 컴퓨터부품 > 램(RAM)",
+    "ID": "1150371",
+    "Name": "램(RAM)",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '컴퓨터부품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 126,
+    "FullPath": "식품/건강 > 의료위생/보조용품 > 의료용품",
+    "ID": "1150827",
+    "Name": "의료용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '의료용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 127,
+    "FullPath": "식품/건강 > 의료위생/보조용품 > 이동 보호장비",
+    "ID": "1150830",
+    "Name": "이동 보호장비",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '이동 보호장비' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 129,
+    "FullPath": "식품/건강 > 의료위생/보조용품 > 응급 처치 용품",
+    "ID": "1150835",
+    "Name": "응급 처치 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '응급 처치 용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 130,
+    "FullPath": "식품/건강 > 의료위생/보조용품 > 눈 건강 용품",
+    "ID": "1150836",
+    "Name": "눈 건강 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '눈 건강 용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 131,
+    "FullPath": "식품/건강 > 의료위생/보조용품 > 발 관리",
+    "ID": "1150829",
+    "Name": "발 관리",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '발 관리' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 132,
+    "FullPath": "식품/건강 > 의료위생/보조용품 > 일상생활, 안전, 욕실",
+    "ID": "1150843",
+    "Name": "일상생활, 안전, 욕실",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '일상생활, 안전, 욕실' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 133,
+    "FullPath": "식품/건강 > 의료위생/보조용품 > 건강관리 용품",
+    "ID": "1150842",
+    "Name": "건강관리 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '건강관리 용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 134,
+    "FullPath": "식품/건강 > 의료위생/보조용품 > 마스크",
+    "ID": "1167972",
+    "Name": "마스크",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '마스크' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 136,
+    "FullPath": "식품/건강 > 의료위생/보조용품 > 기저귀",
+    "ID": "1150828",
+    "Name": "기저귀",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '기저귀' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 137,
+    "FullPath": "식품/건강 > 의료위생/보조용품 > 관절 보호대",
+    "ID": "1149769",
+    "Name": "관절 보호대",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '관절 보호대' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 138,
+    "FullPath": "식품/건강 > 의료위생/보조용품 > 혈당 관리 용품",
+    "ID": "1150841",
+    "Name": "혈당 관리 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '혈당 관리 용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 139,
+    "FullPath": "식품/건강 > 의료위생/보조용품 > 마사지 테이블 및 액세서리",
+    "ID": "1150939",
+    "Name": "마사지 테이블 및 액세서리",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '마사지 테이블 및 액세서리' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 140,
+    "FullPath": "식품/건강 > 의료위생/보조용품 > 저울",
+    "ID": "1150840",
+    "Name": "저울",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '저울' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 141,
+    "FullPath": "식품/건강 > 의료위생/보조용품 > 성인 기저귀",
+    "ID": "1150831",
+    "Name": "성인 기저귀",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '성인 기저귀' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 142,
+    "FullPath": "식품/건강 > 의료위생/보조용품 > 난방/냉각 패드",
+    "ID": "1150934",
+    "Name": "난방/냉각 패드",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '난방/냉각 패드' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 143,
+    "FullPath": "식품/건강 > 의료위생/보조용품 > 사무 용품",
+    "ID": "1150833",
+    "Name": "사무 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '사무 용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 144,
+    "FullPath": "식품/건강 > 의료위생/보조용품 > 보호대",
+    "ID": "1150826",
+    "Name": "보호대",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '보호대' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 145,
+    "FullPath": "식품/건강 > 의료위생/보조용품 > 찜질 패드",
+    "ID": "1150844",
+    "Name": "찜질 패드",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '찜질 패드' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 146,
+    "FullPath": "식품/건강 > 스낵/간식 > 빵/베이커리",
+    "ID": "1150992",
+    "Name": "빵/베이커리",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '스낵/간식' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 147,
+    "FullPath": "식품/건강 > 스낵/간식 > 초콜릿/사탕/젤리/껌",
+    "ID": "1150995",
+    "Name": "초콜릿/사탕/젤리/껌",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '스낵/간식' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 148,
+    "FullPath": "식품/건강 > 스낵/간식 > 스낵/시리얼",
+    "ID": "1150993",
+    "Name": "스낵/시리얼",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '스낵/간식' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 149,
+    "FullPath": "식품/건강 > 건강식품 > 비타민/미네랄",
+    "ID": "1150942",
+    "Name": "비타민/미네랄",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '건강식품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 150,
+    "FullPath": "식품/건강 > 건강식품 > 허브/자연추출물",
+    "ID": "1150976",
+    "Name": "허브/자연추출물",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '건강식품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 151,
+    "FullPath": "식품/건강 > 건강식품 > 영양제",
+    "ID": "1150943",
+    "Name": "영양제",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '건강식품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 152,
+    "FullPath": "식품/건강 > 건강식품 > 헬스보충식품",
+    "ID": "1150944",
+    "Name": "헬스보충식품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '건강식품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 153,
+    "FullPath": "식품/건강 > 건강식품 > 다이어트식품",
+    "ID": "1150977",
+    "Name": "다이어트식품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '건강식품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 154,
+    "FullPath": "식품/건강 > 건강식품 > 어린이용 영양제",
+    "ID": "1208535",
+    "Name": "어린이용 영양제",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '건강식품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 155,
+    "FullPath": "식품/건강 > 생수/음료 > 음료",
+    "ID": "1150991",
+    "Name": "음료",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '생수/음료' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 156,
+    "FullPath": "식품/건강 > 생수/음료 > 생수/탄산수",
+    "ID": "1150990",
+    "Name": "생수/탄산수",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '생수/음료' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 157,
+    "FullPath": "식품/건강 > 기타 식품/건강 > 기타 제품",
+    "ID": "1154023",
+    "Name": "기타 제품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '기타 식품/건강' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 158,
+    "FullPath": "식품/건강 > 가루/조미료/향신료 > 설탕/소금/조미료",
+    "ID": "1150987",
+    "Name": "설탕/소금/조미료",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '가루/조미료/향신료' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 159,
+    "FullPath": "식품/건강 > 가루/조미료/향신료 > 가루",
+    "ID": "1150986",
+    "Name": "가루",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '가루/조미료/향신료' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 160,
+    "FullPath": "식품/건강 > 가공/즉석식품 > 잼/꿀/시럽",
+    "ID": "1150983",
+    "Name": "잼/꿀/시럽",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '가공/즉석식품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 161,
+    "FullPath": "식품/건강 > 가공/즉석식품 > 통조림류",
+    "ID": "1150985",
+    "Name": "통조림류",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '가공/즉석식품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 162,
+    "FullPath": "식품/건강 > 가공/즉석식품 > 면류",
+    "ID": "1150982",
+    "Name": "면류",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '가공/즉석식품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 163,
+    "FullPath": "식품/건강 > 가공/즉석식품 > 즉석밥/간편조리",
+    "ID": "1150984",
+    "Name": "즉석밥/간편조리",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '가공/즉석식품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 164,
+    "FullPath": "식품/건강 > 장/오일/소스 > 소스",
+    "ID": "1163129",
+    "Name": "소스",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '장/오일/소스' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 165,
+    "FullPath": "식품/건강 > 장/오일/소스 > 오일",
+    "ID": "1150999",
+    "Name": "오일",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '장/오일/소스' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 166,
+    "FullPath": "식품/건강 > 장/오일/소스 > 드레싱",
+    "ID": "1163130",
+    "Name": "드레싱",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '장/오일/소스' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 167,
+    "FullPath": "식품/건강 > 커피/차 > 티",
+    "ID": "1151000",
+    "Name": "티",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '커피/차' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 168,
+    "FullPath": "식품/건강 > 커피/차 > 커피",
+    "ID": "1163127",
+    "Name": "커피",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '커피/차' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 169,
+    "FullPath": "식품/건강 > 영유아식품 > 이유/영유아식",
+    "ID": "1150981",
+    "Name": "이유/영유아식",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '영유아식품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 170,
+    "FullPath": "식품/건강 > 영유아식품 > 영유아 음료",
+    "ID": "1150980",
+    "Name": "영유아 음료",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '영유아식품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 171,
+    "FullPath": "식품/건강 > 영유아식품 > 영유아 간식",
+    "ID": "1150979",
+    "Name": "영유아 간식",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '영유아식품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 172,
+    "FullPath": "식품/건강 > 영유아식품 > 분유",
+    "ID": "1211987",
+    "Name": "분유",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '영유아식품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 173,
+    "FullPath": "식품/건강 > 임산부용품 > 임산부 건강식품",
+    "ID": "1150978",
+    "Name": "임산부 건강식품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '임산부용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 174,
+    "FullPath": "홈&인테리어 > 인테리어용품 > 장식소품",
+    "ID": "1150756",
+    "Name": "장식소품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 175,
+    "FullPath": "홈&인테리어 > 인테리어용품 > 액자/그림/사진",
+    "ID": "1150753",
+    "Name": "액자/그림/사진",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 176,
+    "FullPath": "홈&인테리어 > 인테리어용품 > 인테리어 자재",
+    "ID": "1150755",
+    "Name": "인테리어 자재",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 177,
+    "FullPath": "홈&인테리어 > 인테리어용품 > 시즌 소품",
+    "ID": "1150751",
+    "Name": "시즌 소품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 178,
+    "FullPath": "홈&인테리어 > 인테리어용품 > 시계",
+    "ID": "1150750",
+    "Name": "시계",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 179,
+    "FullPath": "홈&인테리어 > 인테리어용품 > 거울",
+    "ID": "1150748",
+    "Name": "거울",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 180,
+    "FullPath": "홈&인테리어 > 인테리어용품 > 환기/팬",
+    "ID": "1153903",
+    "Name": "환기/팬",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 181,
+    "FullPath": "홈&인테리어 > 반려동물 > 강아지용품",
+    "ID": "1229210",
+    "Name": "강아지용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 182,
+    "FullPath": "홈&인테리어 > 반려동물 > 소동물용품",
+    "ID": "1229213",
+    "Name": "소동물용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 183,
+    "FullPath": "홈&인테리어 > 반려동물 > 고양이용품",
+    "ID": "1229211",
+    "Name": "고양이용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 184,
+    "FullPath": "홈&인테리어 > 반려동물 > 기타 반려동물용품",
+    "ID": "1229212",
+    "Name": "기타 반려동물용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 185,
+    "FullPath": "홈&인테리어 > 반려동물 > 가축사료/용품",
+    "ID": "1229199",
+    "Name": "가축사료/용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 186,
+    "FullPath": "홈&인테리어 > 가든용품 > 야외 생활",
+    "ID": "1150793",
+    "Name": "야외 생활",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 187,
+    "FullPath": "홈&인테리어 > 가든용품 > 야외 전원",
+    "ID": "1150794",
+    "Name": "야외 전원",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 188,
+    "FullPath": "홈&인테리어 > 가든용품 > 원예",
+    "ID": "1150789",
+    "Name": "원예",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 189,
+    "FullPath": "홈&인테리어 > 가든용품 > 농업",
+    "ID": "1150788",
+    "Name": "농업",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 190,
+    "FullPath": "홈&인테리어 > 가든용품 > 야외 가구",
+    "ID": "1150792",
+    "Name": "야외 가구",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 191,
+    "FullPath": "홈&인테리어 > 가든용품 > 수영장 및 스파 공급",
+    "ID": "1150795",
+    "Name": "수영장 및 스파 공급",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 192,
+    "FullPath": "홈&인테리어 > 가든용품 > 그릴",
+    "ID": "1150791",
+    "Name": "그릴",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 193,
+    "FullPath": "홈&인테리어 > 가든용품 > 제설",
+    "ID": "1150796",
+    "Name": "제설",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 194,
+    "FullPath": "홈&인테리어 > 가든용품 > 나무 재질",
+    "ID": "1150797",
+    "Name": "나무 재질",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 195,
+    "FullPath": "홈&인테리어 > 쿠션/방석/수예 > 수예소품",
+    "ID": "1150768",
+    "Name": "수예소품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 196,
+    "FullPath": "홈&인테리어 > 쿠션/방석/수예 > 쿠션/방석",
+    "ID": "1150769",
+    "Name": "쿠션/방석",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 197,
+    "FullPath": "홈&인테리어 > 침구 > 베개",
+    "ID": "1150760",
+    "Name": "베개",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 198,
+    "FullPath": "홈&인테리어 > 침구 > 이불/요",
+    "ID": "1150761",
+    "Name": "이불/요",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 199,
+    "FullPath": "홈&인테리어 > 침구 > 침구 세트",
+    "ID": "1151108",
+    "Name": "침구 세트",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 200,
+    "FullPath": "홈&인테리어 > 청소/세탁/욕실용품 > 욕실 용품",
+    "ID": "1150734",
+    "Name": "욕실 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 201,
+    "FullPath": "홈&인테리어 > 청소/세탁/욕실용품 > 청소 용품",
+    "ID": "1150735",
+    "Name": "청소 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 202,
+    "FullPath": "홈&인테리어 > 청소/세탁/욕실용품 > 수건/타월",
+    "ID": "1150732",
+    "Name": "수건/타월",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 203,
+    "FullPath": "홈&인테리어 > 청소/세탁/욕실용품 > 세탁/건조 용품",
+    "ID": "1150731",
+    "Name": "세탁/건조 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 204,
+    "FullPath": "홈&인테리어 > 구강/면도용품 > 면도 용품",
+    "ID": "1150918",
+    "Name": "면도 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 205,
+    "FullPath": "홈&인테리어 > 구강/면도용품 > 구강 보조 용품",
+    "ID": "1150917",
+    "Name": "구강 보조 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 206,
+    "FullPath": "홈&인테리어 > 구강/면도용품 > 구강 용품",
+    "ID": "1150919",
+    "Name": "구강 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 207,
+    "FullPath": "홈&인테리어 > 가구/홈인테리어 > 수납 가구",
+    "ID": "1150741",
+    "Name": "수납 가구",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 208,
+    "FullPath": "홈&인테리어 > 가구/홈인테리어 > 학생/사무용 가구",
+    "ID": "1150747",
+    "Name": "학생/사무용 가구",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 209,
+    "FullPath": "홈&인테리어 > 가구/홈인테리어 > 거실 가구",
+    "ID": "1150739",
+    "Name": "거실 가구",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 210,
+    "FullPath": "홈&인테리어 > 가구/홈인테리어 > 침대/매트리스",
+    "ID": "1150745",
+    "Name": "침대/매트리스",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 211,
+    "FullPath": "홈&인테리어 > 가구/홈인테리어 > 야외 가구",
+    "ID": "1150742",
+    "Name": "야외 가구",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 212,
+    "FullPath": "홈&인테리어 > 가구/홈인테리어 > 주방 가구",
+    "ID": "1150744",
+    "Name": "주방 가구",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 213,
+    "FullPath": "홈&인테리어 > 가구/홈인테리어 > 금고",
+    "ID": "1150740",
+    "Name": "금고",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 214,
+    "FullPath": "홈&인테리어 > 가구/홈인테리어 > 침실 가구",
+    "ID": "1150746",
+    "Name": "침실 가구",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 215,
+    "FullPath": "홈&인테리어 > 기타 홈&인테리어 > 기타 제품",
+    "ID": "1154021",
+    "Name": "기타 제품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 216,
+    "FullPath": "홈&인테리어 > 커튼/침장 > 커튼/블라인드",
+    "ID": "1150767",
+    "Name": "커튼/블라인드",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 217,
+    "FullPath": "홈&인테리어 > 커튼/침장 > 캐노피",
+    "ID": "1150766",
+    "Name": "캐노피",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 218,
+    "FullPath": "홈&인테리어 > 수납/정리잡화 > 옷걸이/도어훅",
+    "ID": "1150728",
+    "Name": "옷걸이/도어훅",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 219,
+    "FullPath": "홈&인테리어 > 수납/정리잡화 > 가정용품 기타",
+    "ID": "1150724",
+    "Name": "가정용품 기타",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 220,
+    "FullPath": "홈&인테리어 > 수납/정리잡화 > 수납/정리 용품",
+    "ID": "1150726",
+    "Name": "수납/정리 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 221,
+    "FullPath": "홈&인테리어 > 수납/정리잡화 > 압축팩",
+    "ID": "1150727",
+    "Name": "압축팩",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 222,
+    "FullPath": "홈&인테리어 > 수납/정리잡화 > 일용잡화",
+    "ID": "1150725",
+    "Name": "일용잡화",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 223,
+    "FullPath": "홈&인테리어 > 카페트/매트 > 카펫/발매트",
+    "ID": "1150764",
+    "Name": "카펫/발매트",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 224,
+    "FullPath": "홈&인테리어 > 카페트/매트 > 매트",
+    "ID": "1150763",
+    "Name": "매트",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 225,
+    "FullPath": "홈&인테리어 > 화장지/제지 > 화장지/티슈",
+    "ID": "1150738",
+    "Name": "화장지/티슈",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 226,
+    "FullPath": "홈&인테리어 > 화장지/제지 > 일반 물티슈",
+    "ID": "1359101",
+    "Name": "일반 물티슈",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 227,
+    "FullPath": "홈&인테리어 > 화장지/제지 > 청소용 물티슈",
+    "ID": "1359102",
+    "Name": "청소용 물티슈",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 228,
+    "FullPath": "홈&인테리어 > 화장지/제지 > 여성/시니어 위생 용품",
+    "ID": "1150737",
+    "Name": "여성/시니어 위생 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 229,
+    "FullPath": "홈&인테리어 > 안전용품 > 가정/생활안전 용품",
+    "ID": "1150729",
+    "Name": "가정/생활안전 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 230,
+    "FullPath": "홈&인테리어 > 안전용품 > 안전사고방지 용품",
+    "ID": "1150730",
+    "Name": "안전사고방지 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 231,
+    "FullPath": "홈&인테리어 > 해충퇴치용품 > 살충/방충 용품",
+    "ID": "1150736",
+    "Name": "살충/방충 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '홈&인테리어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 236,
+    "FullPath": "공구용품 > 공구/철물/DIY > 건축 재료",
+    "ID": "1151096",
+    "Name": "건축 재료",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '건축 재료' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 237,
+    "FullPath": "공구용품 > 공구/철물/DIY > 도장 재료",
+    "ID": "1151092",
+    "Name": "도장 재료",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도장 재료' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 247,
+    "FullPath": "공구용품 > 산업 공구 > 예초기",
+    "ID": "1151089",
+    "Name": "예초기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '예초기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 251,
+    "FullPath": "자동차용품 > 차량정비용품 > 흡기/배기 튜닝",
+    "ID": "1151078",
+    "Name": "흡기/배기 튜닝",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 252,
+    "FullPath": "자동차용품 > 차량정비용품 > 타이어 용품",
+    "ID": "1151075",
+    "Name": "타이어 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 253,
+    "FullPath": "자동차용품 > 차량정비용품 > 공구",
+    "ID": "1151062",
+    "Name": "공구",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 254,
+    "FullPath": "자동차용품 > 차량정비용품 > 레이싱 용품",
+    "ID": "1151064",
+    "Name": "레이싱 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 255,
+    "FullPath": "자동차용품 > 차량정비용품 > 휠",
+    "ID": "1151077",
+    "Name": "휠",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 256,
+    "FullPath": "자동차용품 > 차량정비용품 > 방음재/방음 매트",
+    "ID": "1151066",
+    "Name": "방음재/방음 매트",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 257,
+    "FullPath": "자동차용품 > 실내인테리어용품 > 자동차 액세서리",
+    "ID": "1151031",
+    "Name": "자동차 액세서리",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 258,
+    "FullPath": "자동차용품 > 실내인테리어용품 > 키 홀더/열쇠고리",
+    "ID": "1151034",
+    "Name": "키 홀더/열쇠고리",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 259,
+    "FullPath": "자동차용품 > 실내인테리어용품 > 기어 용품",
+    "ID": "1151027",
+    "Name": "기어 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 260,
+    "FullPath": "자동차용품 > 실내인테리어용품 > 선팅 용품",
+    "ID": "1151030",
+    "Name": "선팅 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 261,
+    "FullPath": "자동차용품 > 실내인테리어용품 > 페달/보조발판",
+    "ID": "1151035",
+    "Name": "페달/보조발판",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 262,
+    "FullPath": "자동차용품 > 실내인테리어용품 > 도어 용품",
+    "ID": "1151028",
+    "Name": "도어 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 263,
+    "FullPath": "자동차용품 > 실내인테리어용품 > 시계/온도계/습도계",
+    "ID": "1151029",
+    "Name": "시계/온도계/습도계",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 264,
+    "FullPath": "자동차용품 > 실내인테리어용품 > 정전기 방지 용품",
+    "ID": "1151032",
+    "Name": "정전기 방지 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 265,
+    "FullPath": "자동차용품 > 실내인테리어용품 > 햇빛 차단 용품",
+    "ID": "1151037",
+    "Name": "햇빛 차단 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 266,
+    "FullPath": "자동차용품 > 실내인테리어용품 > 핸들/핸들커버",
+    "ID": "1151036",
+    "Name": "핸들/핸들커버",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 267,
+    "FullPath": "자동차용품 > 실외익스테리어용품 > 몰딩/가드",
+    "ID": "1151038",
+    "Name": "몰딩/가드",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 268,
+    "FullPath": "자동차용품 > 실외익스테리어용품 > 스티커",
+    "ID": "1151041",
+    "Name": "스티커",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 269,
+    "FullPath": "자동차용품 > 실외익스테리어용품 > 번호판 액세서리",
+    "ID": "1151040",
+    "Name": "번호판 액세서리",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 270,
+    "FullPath": "자동차용품 > 실외익스테리어용품 > 주유구 커버/혼유방지",
+    "ID": "1151045",
+    "Name": "주유구 커버/혼유방지",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 271,
+    "FullPath": "자동차용품 > 실외익스테리어용품 > 와이퍼",
+    "ID": "1151044",
+    "Name": "와이퍼",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 272,
+    "FullPath": "자동차용품 > 실외익스테리어용품 > 선바이저/선루프",
+    "ID": "1151042",
+    "Name": "선바이저/선루프",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 273,
+    "FullPath": "자동차용품 > 실외익스테리어용품 > 미러 용품",
+    "ID": "1151039",
+    "Name": "미러 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 274,
+    "FullPath": "자동차용품 > 실외익스테리어용품 > 차량용 보디 커버",
+    "ID": "1151046",
+    "Name": "차량용 보디 커버",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 275,
+    "FullPath": "자동차용품 > 실외익스테리어용품 > 안테나/볼",
+    "ID": "1151043",
+    "Name": "안테나/볼",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 276,
+    "FullPath": "자동차용품 > 오토바이용품 > 튜닝/부품/정비",
+    "ID": "1151055",
+    "Name": "튜닝/부품/정비",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 277,
+    "FullPath": "자동차용품 > 오토바이용품 > 잡화/액세서리",
+    "ID": "1151054",
+    "Name": "잡화/액세서리",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 278,
+    "FullPath": "자동차용품 > 오토바이용품 > 헬멧/장갑/부츠",
+    "ID": "1151056",
+    "Name": "헬멧/장갑/부츠",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 279,
+    "FullPath": "자동차용품 > 오토바이용품 > 보호장비",
+    "ID": "1151050",
+    "Name": "보호장비",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 280,
+    "FullPath": "자동차용품 > 오토바이용품 > 오토바이 의류",
+    "ID": "1151052",
+    "Name": "오토바이 의류",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 281,
+    "FullPath": "자동차용품 > 오토바이용품 > 오토바이/스쿠터",
+    "ID": "1151051",
+    "Name": "오토바이/스쿠터",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 282,
+    "FullPath": "자동차용품 > 오토바이용품 > 오토바이 전자기기",
+    "ID": "1151053",
+    "Name": "오토바이 전자기기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 283,
+    "FullPath": "자동차용품 > 차량용전자기기 > 스마트기기 용품",
+    "ID": "1151058",
+    "Name": "스마트기기 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 284,
+    "FullPath": "자동차용품 > 차량용전자기기 > 차량용 음향기기",
+    "ID": "1151060",
+    "Name": "차량용 음향기기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 285,
+    "FullPath": "자동차용품 > 차량용전자기기 > 차량 가전 용품",
+    "ID": "1151059",
+    "Name": "차량 가전 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 286,
+    "FullPath": "자동차용품 > 차량용전자기기 > 경보기/스마트키",
+    "ID": "1151057",
+    "Name": "경보기/스마트키",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 287,
+    "FullPath": "자동차용품 > 차량용전자기기 > 후방카메라/감지기",
+    "ID": "1151061",
+    "Name": "후방카메라/감지기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 288,
+    "FullPath": "자동차용품 > 기타 자동차 용품 > 기타 제품",
+    "ID": "1154011",
+    "Name": "기타 제품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 289,
+    "FullPath": "자동차용품 > 안전/편의용품 > 차량용 수납 용품",
+    "ID": "1151048",
+    "Name": "차량용 수납 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 290,
+    "FullPath": "자동차용품 > 안전/편의용품 > 차량용 편의 용품",
+    "ID": "1151049",
+    "Name": "차량용 편의 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 291,
+    "FullPath": "자동차용품 > 안전/편의용품 > 비상/안전 용품",
+    "ID": "1151047",
+    "Name": "비상/안전 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 292,
+    "FullPath": "자동차용품 > 세차용품 > 광택/케미컬",
+    "ID": "1151012",
+    "Name": "광택/케미컬",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 293,
+    "FullPath": "자동차용품 > 세차용품 > 타월/스펀지",
+    "ID": "1151024",
+    "Name": "타월/스펀지",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 294,
+    "FullPath": "자동차용품 > 세차용품 > 성에제거 용품",
+    "ID": "1151016",
+    "Name": "성에제거 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 295,
+    "FullPath": "자동차용품 > 세차용품 > 청소기/ 용품",
+    "ID": "1151023",
+    "Name": "청소기/ 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 296,
+    "FullPath": "자동차용품 > 세차용품 > 먼지털이 용품",
+    "ID": "1151014",
+    "Name": "먼지털이 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 297,
+    "FullPath": "자동차용품 > 세차용품 > 세차 호스/세차 버킷",
+    "ID": "1151019",
+    "Name": "세차 호스/세차 버킷",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 298,
+    "FullPath": "자동차용품 > 세차용품 > 세차 용품 세트",
+    "ID": "1151018",
+    "Name": "세차 용품 세트",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 299,
+    "FullPath": "자동차용품 > 매트/시트/쿠션 > 차량용 시트",
+    "ID": "1151008",
+    "Name": "차량용 시트",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 300,
+    "FullPath": "자동차용품 > 매트/시트/쿠션 > 차량용 카매트",
+    "ID": "1151009",
+    "Name": "차량용 카매트",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 301,
+    "FullPath": "자동차용품 > 매트/시트/쿠션 > 차량용 방석/담요",
+    "ID": "1151007",
+    "Name": "차량용 방석/담요",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 302,
+    "FullPath": "자동차용품 > 매트/시트/쿠션 > 차량용 쿠션",
+    "ID": "1151010",
+    "Name": "차량용 쿠션",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 303,
+    "FullPath": "자동차용품 > 공기청정/방향/탈취 > 차량용 공기청정기",
+    "ID": "1151004",
+    "Name": "차량용 공기청정기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 304,
+    "FullPath": "자동차용품 > 공기청정/방향/탈취 > 차량용 가습기",
+    "ID": "1151003",
+    "Name": "차량용 가습기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자동차용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 305,
+    "FullPath": "도서/음반 > 도서 > 유아동",
+    "ID": "1162805",
+    "Name": "유아동",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 306,
+    "FullPath": "도서/음반 > 도서 > 기타 도서/음반",
+    "ID": "1350153",
+    "Name": "기타 도서/음반",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 307,
+    "FullPath": "도서/음반 > 도서 > 어학/학습/수험서",
+    "ID": "1162800",
+    "Name": "어학/학습/수험서",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 308,
+    "FullPath": "도서/음반 > 도서 > 예술/건축",
+    "ID": "1162803",
+    "Name": "예술/건축",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 309,
+    "FullPath": "도서/음반 > 도서 > 종교/영성",
+    "ID": "1162810",
+    "Name": "종교/영성",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 310,
+    "FullPath": "도서/음반 > 도서 > 과학/수학",
+    "ID": "1162796",
+    "Name": "과학/수학",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 311,
+    "FullPath": "도서/음반 > 도서 > 취미/실용/스포츠",
+    "ID": "1162812",
+    "Name": "취미/실용/스포츠",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 312,
+    "FullPath": "도서/음반 > 도서 > 문학/소설",
+    "ID": "1162798",
+    "Name": "문학/소설",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 313,
+    "FullPath": "도서/음반 > 도서 > 엔터테인먼트",
+    "ID": "1162801",
+    "Name": "엔터테인먼트",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 314,
+    "FullPath": "도서/음반 > 도서 > 경제/경영",
+    "ID": "1162794",
+    "Name": "경제/경영",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 315,
+    "FullPath": "도서/음반 > 도서 > 역사",
+    "ID": "1162791",
+    "Name": "역사",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 316,
+    "FullPath": "도서/음반 > 도서 > 인문/사회",
+    "ID": "1162807",
+    "Name": "인문/사회",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 317,
+    "FullPath": "도서/음반 > 도서 > 의학",
+    "ID": "1162806",
+    "Name": "의학",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 318,
+    "FullPath": "도서/음반 > 도서 > 건강/다이어트",
+    "ID": "1162793",
+    "Name": "건강/다이어트",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 319,
+    "FullPath": "도서/음반 > 도서 > 컴퓨터",
+    "ID": "1162813",
+    "Name": "컴퓨터",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 320,
+    "FullPath": "도서/음반 > 도서 > 가정/가족",
+    "ID": "1162792",
+    "Name": "가정/가족",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 321,
+    "FullPath": "도서/음반 > 도서 > 요리",
+    "ID": "1162804",
+    "Name": "요리",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 322,
+    "FullPath": "도서/음반 > 도서 > 만화/애니메이션",
+    "ID": "1162797",
+    "Name": "만화/애니메이션",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 323,
+    "FullPath": "도서/음반 > 도서 > 공학/기술/운송",
+    "ID": "1162795",
+    "Name": "공학/기술/운송",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 324,
+    "FullPath": "도서/음반 > 도서 > 여행",
+    "ID": "1162802",
+    "Name": "여행",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 325,
+    "FullPath": "도서/음반 > 기타 도서/음반/DVD > 기타 제품",
+    "ID": "1153879",
+    "Name": "기타 제품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 326,
+    "FullPath": "도서/음반 > 음반 > 하드락 & 메탈",
+    "ID": "1150070",
+    "Name": "하드락 & 메탈",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 327,
+    "FullPath": "도서/음반 > 음반 > 국제 음악",
+    "ID": "1150069",
+    "Name": "국제 음악",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 328,
+    "FullPath": "도서/음반 > 음반 > 클래식",
+    "ID": "1150064",
+    "Name": "클래식",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 329,
+    "FullPath": "도서/음반 > 음반 > 기타 음악",
+    "ID": "1150082",
+    "Name": "기타 음악",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 330,
+    "FullPath": "도서/음반 > 음반 > POP",
+    "ID": "1150068",
+    "Name": "POP",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 331,
+    "FullPath": "도서/음반 > 음반 > CD/LP",
+    "ID": "1150083",
+    "Name": "CD/LP",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 332,
+    "FullPath": "도서/음반 > 음반 > 재즈",
+    "ID": "1150065",
+    "Name": "재즈",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 333,
+    "FullPath": "도서/음반 > 음반 > 종교 음악",
+    "ID": "1150071",
+    "Name": "종교 음악",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 334,
+    "FullPath": "도서/음반 > 음반 > 댄스",
+    "ID": "1150073",
+    "Name": "댄스",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 335,
+    "FullPath": "도서/음반 > 음반 > 라틴",
+    "ID": "1150077",
+    "Name": "라틴",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 336,
+    "FullPath": "도서/음반 > 음반 > 랩 & 힙합",
+    "ID": "1150063",
+    "Name": "랩 & 힙합",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 337,
+    "FullPath": "도서/음반 > 음반 > 오페라",
+    "ID": "1150078",
+    "Name": "오페라",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 338,
+    "FullPath": "도서/음반 > 음반 > 블루스",
+    "ID": "1150075",
+    "Name": "블루스",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 339,
+    "FullPath": "도서/음반 > 음반 > 뉴에이지",
+    "ID": "1150076",
+    "Name": "뉴에이지",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 340,
+    "FullPath": "도서/음반 > 음반 > R&B",
+    "ID": "1150067",
+    "Name": "R&B",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 341,
+    "FullPath": "도서/음반 > 음반 > 사운드트랙",
+    "ID": "1150080",
+    "Name": "사운드트랙",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 342,
+    "FullPath": "도서/음반 > 음반 > 클래식 락",
+    "ID": "1150081",
+    "Name": "클래식 락",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 343,
+    "FullPath": "도서/음반 > 음반 > 어린이 음악",
+    "ID": "1150072",
+    "Name": "어린이 음악",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 344,
+    "FullPath": "도서/음반 > 음반 > 브로드웨이",
+    "ID": "1150079",
+    "Name": "브로드웨이",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 345,
+    "FullPath": "도서/음반 > 음반 > 컨트리 음악",
+    "ID": "1150074",
+    "Name": "컨트리 음악",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도서/음반' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 350,
+    "FullPath": "취미/사무용품 > 문구/사무용품 > 포장 용품",
+    "ID": "1150887",
+    "Name": "포장 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '포장 용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 351,
+    "FullPath": "취미/사무용품 > 문구/사무용품 > 필기류",
+    "ID": "1150889",
+    "Name": "필기류",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '필기류' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 352,
+    "FullPath": "취미/사무용품 > 문구/사무용품 > 앨범류",
+    "ID": "1150881",
+    "Name": "앨범류",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '앨범류' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 353,
+    "FullPath": "취미/사무용품 > 문구/사무용품 > 문구세트류",
+    "ID": "1150877",
+    "Name": "문구세트류",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '문구세트류' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 354,
+    "FullPath": "취미/사무용품 > 문구/사무용품 > 가위/칼",
+    "ID": "1150873",
+    "Name": "가위/칼",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '가위/칼' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 355,
+    "FullPath": "취미/사무용품 > 문구/사무용품 > 스티커",
+    "ID": "1150880",
+    "Name": "스티커",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '스티커' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 356,
+    "FullPath": "취미/사무용품 > 문구/사무용품 > 도장",
+    "ID": "1150878",
+    "Name": "도장",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '도장' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 358,
+    "FullPath": "취미/사무용품 > 문구/사무용품 > 수정 용품",
+    "ID": "1150883",
+    "Name": "수정 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '수정 용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 359,
+    "FullPath": "취미/사무용품 > 문구/사무용품 > 스테이플러/펀치",
+    "ID": "1150879",
+    "Name": "스테이플러/펀치",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '스테이플러/펀치' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 360,
+    "FullPath": "취미/사무용품 > 문구/사무용품 > 자/컴퍼스",
+    "ID": "1150882",
+    "Name": "자/컴퍼스",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자/컴퍼스' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 361,
+    "FullPath": "취미/사무용품 > 문구/사무용품 > 클립/압정/자석",
+    "ID": "1150885",
+    "Name": "클립/압정/자석",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '클립/압정/자석' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 363,
+    "FullPath": "취미/사무용품 > 미술/화방용품 > 캔버스",
+    "ID": "1150896",
+    "Name": "캔버스",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '캔버스' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 364,
+    "FullPath": "취미/사무용품 > 미술/화방용품 > 미술 보조 용품",
+    "ID": "1150891",
+    "Name": "미술 보조 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '미술 보조 용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 365,
+    "FullPath": "취미/사무용품 > 미술/화방용품 > 채색 용품",
+    "ID": "1150892",
+    "Name": "채색 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '채색 용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 366,
+    "FullPath": "취미/사무용품 > 미술/화방용품 > 조소/조각/도예 용품",
+    "ID": "1150895",
+    "Name": "조소/조각/도예 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '조소/조각/도예 용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 367,
+    "FullPath": "취미/사무용품 > 미술/화방용품 > 화방 지류",
+    "ID": "1150898",
+    "Name": "화방 지류",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '화방 지류' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 368,
+    "FullPath": "취미/사무용품 > 미술/화방용품 > 제도 용품",
+    "ID": "1150894",
+    "Name": "제도 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '제도 용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 369,
+    "FullPath": "취미/사무용품 > 미술/화방용품 > 애니메이션 재료",
+    "ID": "1150893",
+    "Name": "애니메이션 재료",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '애니메이션 재료' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 370,
+    "FullPath": "취미/사무용품 > 미술/화방용품 > 판화 용품",
+    "ID": "1150897",
+    "Name": "판화 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '판화 용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 373,
+    "FullPath": "취미/사무용품 > 악기용품 > 타악기",
+    "ID": "1150915",
+    "Name": "타악기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '타악기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 374,
+    "FullPath": "취미/사무용품 > 악기용품 > 관악기",
+    "ID": "1150910",
+    "Name": "관악기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '관악기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 375,
+    "FullPath": "취미/사무용품 > 악기용품 > 현악기",
+    "ID": "1150916",
+    "Name": "현악기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '현악기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 376,
+    "FullPath": "취미/사무용품 > 악기용품 > 건반악기",
+    "ID": "1150909",
+    "Name": "건반악기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '건반악기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 377,
+    "FullPath": "취미/사무용품 > 악기용품 > 기타 악기",
+    "ID": "1150913",
+    "Name": "기타 악기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '기타 악기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 379,
+    "FullPath": "취미/사무용품 > 사무용품/기기 > 판촉 용품",
+    "ID": "1150907",
+    "Name": "판촉 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '사무용품/기기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 380,
+    "FullPath": "취미/사무용품 > 사무용품/기기 > 라벨기/라벨 용품",
+    "ID": "1150900",
+    "Name": "라벨기/라벨 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '사무용품/기기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 381,
+    "FullPath": "취미/사무용품 > 사무용품/기기 > 데스크 정리 용품",
+    "ID": "1150901",
+    "Name": "데스크 정리 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '사무용품/기기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 382,
+    "FullPath": "취미/사무용품 > 사무용품/기기 > 독서 용품",
+    "ID": "1150902",
+    "Name": "독서 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '사무용품/기기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 383,
+    "FullPath": "취미/사무용품 > 사무용품/기기 > 파일/바인더",
+    "ID": "1150908",
+    "Name": "파일/바인더",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '사무용품/기기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 384,
+    "FullPath": "취미/사무용품 > 사무용품/기기 > 보드/게시판",
+    "ID": "1150903",
+    "Name": "보드/게시판",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '사무용품/기기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 385,
+    "FullPath": "취미/사무용품 > 사무용품/기기 > 사무용지류",
+    "ID": "1150905",
+    "Name": "사무용지류",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '사무용품/기기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 386,
+    "FullPath": "취미/사무용품 > 사무용품/기기 > 사무기기/소모품",
+    "ID": "1150904",
+    "Name": "사무기기/소모품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '사무용품/기기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 387,
+    "FullPath": "취미/사무용품 > 사무용품/기기 > 계산기",
+    "ID": "1150899",
+    "Name": "계산기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '사무용품/기기' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 389,
+    "FullPath": "화장품 > 뷰티소품 > 헤어 소품",
+    "ID": "1150326",
+    "Name": "헤어 소품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '뷰티소품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 390,
+    "FullPath": "화장품 > 뷰티소품 > 기타 뷰티 소품",
+    "ID": "1150321",
+    "Name": "기타 뷰티 소품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '뷰티소품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 391,
+    "FullPath": "화장품 > 뷰티소품 > 페이스 소품",
+    "ID": "1150325",
+    "Name": "페이스 소품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '뷰티소품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 392,
+    "FullPath": "화장품 > 뷰티소품 > 바디 소품",
+    "ID": "1150322",
+    "Name": "바디 소품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '뷰티소품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 393,
+    "FullPath": "화장품 > 뷰티소품 > 아이 소품",
+    "ID": "1150323",
+    "Name": "아이 소품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '뷰티소품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 394,
+    "FullPath": "화장품 > 뷰티소품 > 클렌징 소품",
+    "ID": "1150324",
+    "Name": "클렌징 소품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '뷰티소품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 396,
+    "FullPath": "화장품 > 네일/핸드/풋케어 > 핸드/풋 케어",
+    "ID": "1150328",
+    "Name": "핸드/풋 케어",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '핸드/풋 케어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 397,
+    "FullPath": "화장품 > 메이크업 > 립 메이크업",
+    "ID": "1150296",
+    "Name": "립 메이크업",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '메이크업' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 398,
+    "FullPath": "화장품 > 메이크업 > 멀티 메이크업",
+    "ID": "1150297",
+    "Name": "멀티 메이크업",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '메이크업' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 399,
+    "FullPath": "화장품 > 메이크업 > 아이 메이크업",
+    "ID": "1150298",
+    "Name": "아이 메이크업",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '메이크업' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 400,
+    "FullPath": "화장품 > 메이크업 > 페이스 메이크업",
+    "ID": "1150299",
+    "Name": "페이스 메이크업",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '메이크업' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 401,
+    "FullPath": "화장품 > 스킨케어 > 스킨케어",
+    "ID": "1150294",
+    "Name": "스킨케어",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '스킨케어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 402,
+    "FullPath": "화장품 > 스킨케어 > 클렌징",
+    "ID": "1150295",
+    "Name": "클렌징",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '스킨케어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 403,
+    "FullPath": "화장품 > 바디케어 > 바디워시/스크럽/입욕용품",
+    "ID": "1150319",
+    "Name": "바디워시/스크럽/입욕용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '바디케어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 404,
+    "FullPath": "화장품 > 바디케어 > 바디로션/크림/오일",
+    "ID": "1150318",
+    "Name": "바디로션/크림/오일",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '바디케어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 405,
+    "FullPath": "화장품 > 바디케어 > 바디케어 용품 기타",
+    "ID": "1150317",
+    "Name": "바디케어 용품 기타",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '바디케어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 406,
+    "FullPath": "화장품 > 바디케어 > 청결제/제모제/슬리밍",
+    "ID": "1150320",
+    "Name": "청결제/제모제/슬리밍",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '바디케어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 407,
+    "FullPath": "화장품 > 헤어케어 > 샴푸/린스",
+    "ID": "1150313",
+    "Name": "샴푸/린스",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '헤어케어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 408,
+    "FullPath": "화장품 > 헤어케어 > 헤어 스타일링제",
+    "ID": "1150315",
+    "Name": "헤어 스타일링제",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '헤어케어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 409,
+    "FullPath": "화장품 > 헤어케어 > 트리트먼트/영양제",
+    "ID": "1150316",
+    "Name": "트리트먼트/영양제",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '헤어케어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 410,
+    "FullPath": "화장품 > 헤어케어 > 염색/펌",
+    "ID": "1150314",
+    "Name": "염색/펌",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '헤어케어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 411,
+    "FullPath": "화장품 > 유아 바디/헤어케어 > 샴푸/컨디셔너",
+    "ID": "1150344",
+    "Name": "샴푸/컨디셔너",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '유아 바디/헤어케어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 412,
+    "FullPath": "화장품 > 유아 바디/헤어케어 > 유아 올인원 워시",
+    "ID": "1150346",
+    "Name": "유아 올인원 워시",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '유아 바디/헤어케어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 413,
+    "FullPath": "화장품 > 유아 바디/헤어케어 > 비누",
+    "ID": "1150343",
+    "Name": "비누",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '유아 바디/헤어케어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 414,
+    "FullPath": "화장품 > 유아 바디/헤어케어 > 바디 워시",
+    "ID": "1150342",
+    "Name": "바디 워시",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '유아 바디/헤어케어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 415,
+    "FullPath": "화장품 > 유아 바디/헤어케어 > 손 세정제",
+    "ID": "1150345",
+    "Name": "손 세정제",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '유아 바디/헤어케어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 416,
+    "FullPath": "화장품 > 유아 바디/헤어케어 > 벌레물림 방지용품",
+    "ID": "1150341",
+    "Name": "벌레물림 방지용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '유아 바디/헤어케어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 417,
+    "FullPath": "화장품 > 기타 화장품 > 기타 제품",
+    "ID": "1154017",
+    "Name": "기타 제품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '기타 화장품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 418,
+    "FullPath": "화장품 > 유아 스킨케어 > 스킨케어",
+    "ID": "1150339",
+    "Name": "스킨케어",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '유아 스킨케어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 419,
+    "FullPath": "화장품 > 유아 스킨케어 > 기타 화장품",
+    "ID": "1150338",
+    "Name": "기타 화장품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '유아 스킨케어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 420,
+    "FullPath": "화장품 > 유아 스킨케어 > 선케어",
+    "ID": "1150340",
+    "Name": "선케어",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '유아 스킨케어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 421,
+    "FullPath": "화장품 > 향수 > 여성 향수",
+    "ID": "1150310",
+    "Name": "여성 향수",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '향수' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 422,
+    "FullPath": "화장품 > 향수 > 남성 향수",
+    "ID": "1150312",
+    "Name": "남성 향수",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '향수' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 423,
+    "FullPath": "화장품 > 향수 > 남녀공용향수",
+    "ID": "1167975",
+    "Name": "남녀공용향수",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '향수' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 424,
+    "FullPath": "화장품 > 향수 > 향수 세트",
+    "ID": "1150311",
+    "Name": "향수 세트",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '향수' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 425,
+    "FullPath": "화장품 > 임산부화장품 > 임산부 크림/헤어/보디",
+    "ID": "1150347",
+    "Name": "임산부 크림/헤어/보디",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '임산부화장품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 426,
+    "FullPath": "화장품 > 선케어 > 선크림",
+    "ID": "1150302",
+    "Name": "선크림",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '선케어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 427,
+    "FullPath": "화장품 > 선케어 > 선 밤",
+    "ID": "1150300",
+    "Name": "선 밤",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '선케어' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 428,
+    "FullPath": "화장품 > 남성화장품 > 화장품 세트",
+    "ID": "1150308",
+    "Name": "화장품 세트",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '남성화장품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 429,
+    "FullPath": "화장품 > 남성화장품 > 클렌징",
+    "ID": "1150309",
+    "Name": "클렌징",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '남성화장품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 430,
+    "FullPath": "화장품 > 남성화장품 > 올인원",
+    "ID": "1150303",
+    "Name": "올인원",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '남성화장품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 431,
+    "FullPath": "화장품 > 남성화장품 > 로션",
+    "ID": "1150305",
+    "Name": "로션",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '남성화장품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 432,
+    "FullPath": "화장품 > 남성화장품 > 크림",
+    "ID": "1150307",
+    "Name": "크림",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '남성화장품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 433,
+    "FullPath": "스포츠/레저 > 자전거 > 자전거 용품",
+    "ID": "1150227",
+    "Name": "자전거 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자전거' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 434,
+    "FullPath": "스포츠/레저 > 자전거 > 자전거 잡화",
+    "ID": "1150228",
+    "Name": "자전거 잡화",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자전거' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 435,
+    "FullPath": "스포츠/레저 > 자전거 > 자전거 신발",
+    "ID": "1150226",
+    "Name": "자전거 신발",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '자전거' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 438,
+    "FullPath": "스포츠/레저 > 스포츠잡화 > 가방/모자/벨트",
+    "ID": "1150223",
+    "Name": "가방/모자/벨트",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '가방/모자/벨트' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 440,
+    "FullPath": "스포츠/레저 > 스포츠잡화 > 메이저 스포츠 용품",
+    "ID": "1153936",
+    "Name": "메이저 스포츠 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '메이저 스포츠 용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 441,
+    "FullPath": "스포츠/레저 > 스포츠잡화 > 헬스/요가",
+    "ID": "1150259",
+    "Name": "헬스/요가",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '헬스/요가' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 445,
+    "FullPath": "스포츠/레저 > 수영/수상스포츠 > 수영/물놀이",
+    "ID": "1150213",
+    "Name": "수영/물놀이",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '수영/물놀이' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 446,
+    "FullPath": "스포츠/레저 > 수영/수상스포츠 > 스노클링/다이빙",
+    "ID": "1150215",
+    "Name": "스노클링/다이빙",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '스노클링/다이빙' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 448,
+    "FullPath": "스포츠/레저 > 수영/수상스포츠 > 수영/수상스포츠 잡화",
+    "ID": "1150214",
+    "Name": "수영/수상스포츠 잡화",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '수영/수상스포츠 잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 449,
+    "FullPath": "스포츠/레저 > 구기/라켓스포츠 > 야구",
+    "ID": "1150197",
+    "Name": "야구",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '구기/라켓스포츠' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 450,
+    "FullPath": "스포츠/레저 > 구기/라켓스포츠 > 축구",
+    "ID": "1150198",
+    "Name": "축구",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '구기/라켓스포츠' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 451,
+    "FullPath": "스포츠/레저 > 구기/라켓스포츠 > 배드민턴/탁구/테니스",
+    "ID": "1150194",
+    "Name": "배드민턴/탁구/테니스",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '구기/라켓스포츠' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 452,
+    "FullPath": "스포츠/레저 > 구기/라켓스포츠 > 심판 용품",
+    "ID": "1150196",
+    "Name": "심판 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '구기/라켓스포츠' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 453,
+    "FullPath": "스포츠/레저 > 구기/라켓스포츠 > 당구/포켓볼",
+    "ID": "1150192",
+    "Name": "당구/포켓볼",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '구기/라켓스포츠' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 454,
+    "FullPath": "스포츠/레저 > 구기/라켓스포츠 > 구기/라켓스포츠 기타",
+    "ID": "1150190",
+    "Name": "구기/라켓스포츠 기타",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '구기/라켓스포츠' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 455,
+    "FullPath": "스포츠/레저 > 구기/라켓스포츠 > 농구",
+    "ID": "1150191",
+    "Name": "농구",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '구기/라켓스포츠' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 456,
+    "FullPath": "스포츠/레저 > 구기/라켓스포츠 > 배구/피구/족구",
+    "ID": "1150193",
+    "Name": "배구/피구/족구",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '구기/라켓스포츠' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 457,
+    "FullPath": "스포츠/레저 > 구기/라켓스포츠 > 볼링",
+    "ID": "1150195",
+    "Name": "볼링",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '구기/라켓스포츠' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 460,
+    "FullPath": "스포츠/레저 > 골프 > 골프의류",
+    "ID": "1150432",
+    "Name": "골프의류",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '골프의류' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 461,
+    "FullPath": "스포츠/레저 > 기타스포츠 > 다트/기타 레저",
+    "ID": "1150199",
+    "Name": "다트/기타 레저",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '다트/기타 레저' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 462,
+    "FullPath": "스포츠/레저 > 기타스포츠 > 육상/체조",
+    "ID": "1150202",
+    "Name": "육상/체조",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '육상/체조' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 463,
+    "FullPath": "스포츠/레저 > 기타스포츠 > 승마",
+    "ID": "1150201",
+    "Name": "승마",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '승마' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 467,
+    "FullPath": "스포츠/레저 > 캠핑 > 캠핑 소품",
+    "ID": "1150231",
+    "Name": "캠핑 소품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '캠핑 소품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 468,
+    "FullPath": "스포츠/레저 > 캠핑 > 텐트/타프",
+    "ID": "1150236",
+    "Name": "텐트/타프",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '텐트/타프' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 469,
+    "FullPath": "스포츠/레저 > 캠핑 > 캠핑 침구",
+    "ID": "1150235",
+    "Name": "캠핑 침구",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '캠핑 침구' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 471,
+    "FullPath": "스포츠/레저 > 캠핑 > 의자/테이블",
+    "ID": "1150232",
+    "Name": "의자/테이블",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '의자/테이블' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 472,
+    "FullPath": "스포츠/레저 > 캠핑 > 돗자리/매트",
+    "ID": "1150229",
+    "Name": "돗자리/매트",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '돗자리/매트' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 473,
+    "FullPath": "스포츠/레저 > 헬스/요가 > 헬스",
+    "ID": "1150242",
+    "Name": "헬스",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '헬스/요가' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 474,
+    "FullPath": "스포츠/레저 > 헬스/요가 > 요가/필라테스",
+    "ID": "1150241",
+    "Name": "요가/필라테스",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '헬스/요가' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 475,
+    "FullPath": "스포츠/레저 > 킥보드/스케이트 > 인라인/스케이트",
+    "ID": "1150237",
+    "Name": "인라인/스케이트",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '킥보드/스케이트' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 476,
+    "FullPath": "스포츠/레저 > 킥보드/스케이트 > 킥보드",
+    "ID": "1150239",
+    "Name": "킥보드",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '킥보드/스케이트' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 477,
+    "FullPath": "스포츠/레저 > 킥보드/스케이트 > 스케이트",
+    "ID": "1150240",
+    "Name": "스케이트",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '킥보드/스케이트' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 478,
+    "FullPath": "스포츠/레저 > 킥보드/스케이트 > 전동휠/킥보드",
+    "ID": "1150238",
+    "Name": "전동휠/킥보드",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '킥보드/스케이트' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 479,
+    "FullPath": "스포츠/레저 > 등산 > 암벽/빙벽등반 용품",
+    "ID": "1150207",
+    "Name": "암벽/빙벽등반 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '등산' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 480,
+    "FullPath": "스포츠/레저 > 등산 > 등산 신발",
+    "ID": "1150208",
+    "Name": "등산 신발",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '등산' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 481,
+    "FullPath": "스포츠/레저 > 등산 > 보호장비",
+    "ID": "1150206",
+    "Name": "보호장비",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '등산' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 482,
+    "FullPath": "스포츠/레저 > 등산 > 등산 잡화",
+    "ID": "1150205",
+    "Name": "등산 잡화",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '등산' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 487,
+    "FullPath": "스포츠/레저 > 발레/댄스/에어로빅 > 댄스",
+    "ID": "1150209",
+    "Name": "댄스",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '발레/댄스/에어로빅' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 488,
+    "FullPath": "스포츠/레저 > 발레/댄스/에어로빅 > 발레",
+    "ID": "1150210",
+    "Name": "발레",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '발레/댄스/에어로빅' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 489,
+    "FullPath": "스포츠/레저 > 발레/댄스/에어로빅 > 에어로빅",
+    "ID": "1150211",
+    "Name": "에어로빅",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '발레/댄스/에어로빅' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 490,
+    "FullPath": "스포츠/레저 > 검도/격투/무술 > 복싱/격투기",
+    "ID": "1150430",
+    "Name": "복싱/격투기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '검도/격투/무술' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 491,
+    "FullPath": "스포츠/레저 > 검도/격투/무술 > 검도",
+    "ID": "1150429",
+    "Name": "검도",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '검도/격투/무술' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 492,
+    "FullPath": "스포츠/레저 > 스포츠용품 > 소품",
+    "ID": "1150221",
+    "Name": "소품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '소품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 493,
+    "FullPath": "스포츠/레저 > 스포츠용품 > 측정용품",
+    "ID": "1150222",
+    "Name": "측정용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '측정용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 494,
+    "FullPath": "주방용품 > 조리기구/도구 > 베이킹 용품",
+    "ID": "1150808",
+    "Name": "베이킹 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '베이킹 용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 495,
+    "FullPath": "주방용품 > 조리기구/도구 > 조리보조도구",
+    "ID": "1150811",
+    "Name": "조리보조도구",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '조리보조도구' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 497,
+    "FullPath": "주방용품 > 조리기구/도구 > 냄비/프라이팬",
+    "ID": "1150807",
+    "Name": "냄비/프라이팬",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '냄비/프라이팬' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 498,
+    "FullPath": "주방용품 > 조리기구/도구 > 칼/가위/도마",
+    "ID": "1150812",
+    "Name": "칼/가위/도마",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '칼/가위/도마' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 499,
+    "FullPath": "주방용품 > 조리기구/도구 > 간식 조리도구",
+    "ID": "1150806",
+    "Name": "간식 조리도구",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '간식 조리도구' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 500,
+    "FullPath": "주방용품 > 조리기구/도구 > 티 용품",
+    "ID": "1150814",
+    "Name": "티 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '티 용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 501,
+    "FullPath": "주방용품 > 조리기구/도구 > 커피 용품",
+    "ID": "1150813",
+    "Name": "커피 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '커피 용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 502,
+    "FullPath": "주방용품 > 조리기구/도구 > 베이킹 포장/도시락 포장",
+    "ID": "1150809",
+    "Name": "베이킹 포장/도시락 포장",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '베이킹 포장/도시락 포장' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 505,
+    "FullPath": "주방용품 > 식기/수저 > 양식커트러리",
+    "ID": "1150799",
+    "Name": "양식커트러리",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '양식커트러리' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 507,
+    "FullPath": "주방용품 > 주방수납/잡화 > 주방잡화/액세서리",
+    "ID": "1150818",
+    "Name": "주방잡화/액세서리",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '주방잡화/액세서리' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 509,
+    "FullPath": "주방용품 > 주방수납/잡화 > 주방 세척도구",
+    "ID": "1150817",
+    "Name": "주방 세척도구",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '주방 세척도구' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 510,
+    "FullPath": "주방용품 > 주방수납/잡화 > 냉장고 정리 용품",
+    "ID": "1150816",
+    "Name": "냉장고 정리 용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '냉장고 정리 용품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 516,
+    "FullPath": "주방용품 > 주방일회용품/소모품 > 일회용 컵/수저/식기",
+    "ID": "1150823",
+    "Name": "일회용 컵/수저/식기",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '주방일회용품/소모품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 517,
+    "FullPath": "주방용품 > 주방일회용품/소모품 > 기타 일회용품/소모품",
+    "ID": "1150819",
+    "Name": "기타 일회용품/소모품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '주방일회용품/소모품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 518,
+    "FullPath": "주방용품 > 주방일회용품/소모품 > 뚜껑/홀더/빨대",
+    "ID": "1150820",
+    "Name": "뚜껑/홀더/빨대",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '주방일회용품/소모품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 519,
+    "FullPath": "주방용품 > 주방일회용품/소모품 > 장갑/봉투/지퍼백",
+    "ID": "1150822",
+    "Name": "장갑/봉투/지퍼백",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '주방일회용품/소모품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 520,
+    "FullPath": "주방용품 > 주방일회용품/소모품 > 랩/호일",
+    "ID": "1150821",
+    "Name": "랩/호일",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '주방일회용품/소모품' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 522,
+    "FullPath": "패션/잡화 > 남성의류 > 상의",
+    "ID": "1150107",
+    "Name": "상의",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 523,
+    "FullPath": "패션/잡화 > 남성의류 > 트레이닝복",
+    "ID": "1150110",
+    "Name": "트레이닝복",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 524,
+    "FullPath": "패션/잡화 > 남성의류 > 아우터",
+    "ID": "1150108",
+    "Name": "아우터",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 525,
+    "FullPath": "패션/잡화 > 남성의류 > 하의",
+    "ID": "1150112",
+    "Name": "하의",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 526,
+    "FullPath": "패션/잡화 > 남성의류 > 정장/세트",
+    "ID": "1150109",
+    "Name": "정장/세트",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 527,
+    "FullPath": "패션/잡화 > 남성의류 > 패션 래시가드",
+    "ID": "1150111",
+    "Name": "패션 래시가드",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 528,
+    "FullPath": "패션/잡화 > 패션슈즈 > 여성화",
+    "ID": "1150178",
+    "Name": "여성화",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 529,
+    "FullPath": "패션/잡화 > 패션슈즈 > 남성화",
+    "ID": "1150176",
+    "Name": "남성화",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 530,
+    "FullPath": "패션/잡화 > 패션슈즈 > 캐릭터 신발",
+    "ID": "1359076",
+    "Name": "캐릭터 신발",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 531,
+    "FullPath": "패션/잡화 > 패션슈즈 > 신발용품",
+    "ID": "1150177",
+    "Name": "신발용품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 532,
+    "FullPath": "패션/잡화 > 여성의류 > 상의",
+    "ID": "1150121",
+    "Name": "상의",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 533,
+    "FullPath": "패션/잡화 > 여성의류 > 원피스/세트",
+    "ID": "1150123",
+    "Name": "원피스/세트",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 534,
+    "FullPath": "패션/잡화 > 여성의류 > 하의",
+    "ID": "1150126",
+    "Name": "하의",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 535,
+    "FullPath": "패션/잡화 > 여성의류 > 트레이닝복",
+    "ID": "1150124",
+    "Name": "트레이닝복",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 536,
+    "FullPath": "패션/잡화 > 여성의류 > 아우터",
+    "ID": "1150122",
+    "Name": "아우터",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 537,
+    "FullPath": "패션/잡화 > 여성의류 > 기타 테마 의류",
+    "ID": "1150119",
+    "Name": "기타 테마 의류",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 538,
+    "FullPath": "패션/잡화 > 여성의류 > 수영복",
+    "ID": "1150120",
+    "Name": "수영복",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 539,
+    "FullPath": "패션/잡화 > 여성의류 > 패션 래시가드",
+    "ID": "1150125",
+    "Name": "패션 래시가드",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 540,
+    "FullPath": "패션/잡화 > 시계/쥬얼리 > 주얼리",
+    "ID": "1150165",
+    "Name": "주얼리",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 541,
+    "FullPath": "패션/잡화 > 시계/쥬얼리 > 헤어 액세서리",
+    "ID": "1150166",
+    "Name": "헤어 액세서리",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 542,
+    "FullPath": "패션/잡화 > 시계/쥬얼리 > 시계",
+    "ID": "1150164",
+    "Name": "시계",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 543,
+    "FullPath": "패션/잡화 > 캐주얼의류 > 캐릭터 의류",
+    "ID": "1358971",
+    "Name": "캐릭터 의류",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 544,
+    "FullPath": "패션/잡화 > 캐주얼의류 > 기타 테마의류",
+    "ID": "1151101",
+    "Name": "기타 테마의류",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 545,
+    "FullPath": "패션/잡화 > 캐주얼의류 > 상의",
+    "ID": "1151103",
+    "Name": "상의",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 546,
+    "FullPath": "패션/잡화 > 캐주얼의류 > 하의",
+    "ID": "1151107",
+    "Name": "하의",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 547,
+    "FullPath": "패션/잡화 > 캐주얼의류 > 커플룩/패밀리룩",
+    "ID": "1151105",
+    "Name": "커플룩/패밀리룩",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 548,
+    "FullPath": "패션/잡화 > 캐주얼의류 > 아우터",
+    "ID": "1151104",
+    "Name": "아우터",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 549,
+    "FullPath": "패션/잡화 > 캐주얼의류 > 트레이닝",
+    "ID": "1151106",
+    "Name": "트레이닝",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 550,
+    "FullPath": "패션/잡화 > 캐주얼의류 > 빅 사이즈 의류",
+    "ID": "1151102",
+    "Name": "빅 사이즈 의류",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 551,
+    "FullPath": "패션/잡화 > 가방 > 여성 가방",
+    "ID": "1150142",
+    "Name": "여성 가방",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 552,
+    "FullPath": "패션/잡화 > 가방 > 여행용 가방/소품",
+    "ID": "1150143",
+    "Name": "여행용 가방/소품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 553,
+    "FullPath": "패션/잡화 > 가방 > 가방 액세서리",
+    "ID": "1150140",
+    "Name": "가방 액세서리",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 554,
+    "FullPath": "패션/잡화 > 가방 > 캐주얼 가방",
+    "ID": "1150151",
+    "Name": "캐주얼 가방",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 555,
+    "FullPath": "패션/잡화 > 가방 > 남성 가방",
+    "ID": "1150141",
+    "Name": "남성 가방",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 556,
+    "FullPath": "패션/잡화 > 가방 > 보스턴 가방",
+    "ID": "1150146",
+    "Name": "보스턴 가방",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 557,
+    "FullPath": "패션/잡화 > 가방 > 여권케이스",
+    "ID": "1150148",
+    "Name": "여권케이스",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 558,
+    "FullPath": "패션/잡화 > 가방 > 여행 가방 세트",
+    "ID": "1150147",
+    "Name": "여행 가방 세트",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 559,
+    "FullPath": "패션/잡화 > 가방 > 소프트 캐리어",
+    "ID": "1150145",
+    "Name": "소프트 캐리어",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 560,
+    "FullPath": "패션/잡화 > 스포츠의류 > 수영/수상스포츠",
+    "ID": "1229127",
+    "Name": "수영/수상스포츠",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 561,
+    "FullPath": "패션/잡화 > 스포츠의류 > 상의",
+    "ID": "1229126",
+    "Name": "상의",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 562,
+    "FullPath": "패션/잡화 > 스포츠의류 > 자전거",
+    "ID": "1229131",
+    "Name": "자전거",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 563,
+    "FullPath": "패션/잡화 > 스포츠의류 > 스키/겨울스포츠",
+    "ID": "1229128",
+    "Name": "스키/겨울스포츠",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 564,
+    "FullPath": "패션/잡화 > 스포츠의류 > 하의/세트",
+    "ID": "1229134",
+    "Name": "하의/세트",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 565,
+    "FullPath": "패션/잡화 > 스포츠의류 > 헬스/요가",
+    "ID": "1229135",
+    "Name": "헬스/요가",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 566,
+    "FullPath": "패션/잡화 > 스포츠의류 > 기타 스포츠",
+    "ID": "1229122",
+    "Name": "기타 스포츠",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 567,
+    "FullPath": "패션/잡화 > 스포츠의류 > 야구",
+    "ID": "1229129",
+    "Name": "야구",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 568,
+    "FullPath": "패션/잡화 > 스포츠의류 > 축구",
+    "ID": "1229133",
+    "Name": "축구",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 569,
+    "FullPath": "패션/잡화 > 스포츠의류 > 언더웨어/브라탑",
+    "ID": "1229130",
+    "Name": "언더웨어/브라탑",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 570,
+    "FullPath": "패션/잡화 > 스포츠의류 > 재킷/점퍼/집업",
+    "ID": "1229132",
+    "Name": "재킷/점퍼/집업",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 571,
+    "FullPath": "패션/잡화 > 스포츠의류 > 검도/격투/무술",
+    "ID": "1229120",
+    "Name": "검도/격투/무술",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 572,
+    "FullPath": "패션/잡화 > 스포츠의류 > 메이저 스포츠",
+    "ID": "1229124",
+    "Name": "메이저 스포츠",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 573,
+    "FullPath": "패션/잡화 > 스포츠의류 > 등산복",
+    "ID": "1229123",
+    "Name": "등산복",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 574,
+    "FullPath": "패션/잡화 > 스포츠의류 > 골프",
+    "ID": "1229121",
+    "Name": "골프",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 575,
+    "FullPath": "패션/잡화 > 스포츠의류 > 발레",
+    "ID": "1229125",
+    "Name": "발레",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 576,
+    "FullPath": "패션/잡화 > 언더웨어/홈웨어 > 여성 란제리",
+    "ID": "1150116",
+    "Name": "여성 란제리",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 577,
+    "FullPath": "패션/잡화 > 언더웨어/홈웨어 > 여성 속옷",
+    "ID": "1150118",
+    "Name": "여성 속옷",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 578,
+    "FullPath": "패션/잡화 > 언더웨어/홈웨어 > 캐릭터 속옷",
+    "ID": "1359070",
+    "Name": "캐릭터 속옷",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 579,
+    "FullPath": "패션/잡화 > 언더웨어/홈웨어 > 내복/홈웨어",
+    "ID": "1150115",
+    "Name": "내복/홈웨어",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 580,
+    "FullPath": "패션/잡화 > 언더웨어/홈웨어 > 남성속옷",
+    "ID": "1150114",
+    "Name": "남성속옷",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 581,
+    "FullPath": "패션/잡화 > 언더웨어/홈웨어 > 여성 보정속옷",
+    "ID": "1150117",
+    "Name": "여성 보정속옷",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 582,
+    "FullPath": "패션/잡화 > 모자/장갑 > 모자",
+    "ID": "1150160",
+    "Name": "모자",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 583,
+    "FullPath": "패션/잡화 > 모자/장갑 > 장갑",
+    "ID": "1150161",
+    "Name": "장갑",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 584,
+    "FullPath": "패션/잡화 > 스포츠신발 > 러닝/워킹",
+    "ID": "1229112",
+    "Name": "러닝/워킹",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 585,
+    "FullPath": "패션/잡화 > 스포츠신발 > 테니스",
+    "ID": "1229117",
+    "Name": "테니스",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 586,
+    "FullPath": "패션/잡화 > 스포츠신발 > 기타스포츠",
+    "ID": "1211989",
+    "Name": "기타스포츠",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 587,
+    "FullPath": "패션/잡화 > 스포츠신발 > 배구/피구/족구",
+    "ID": "1229115",
+    "Name": "배구/피구/족구",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 588,
+    "FullPath": "패션/잡화 > 안경/선글라스/소품 > 안경/선글라스",
+    "ID": "1150168",
+    "Name": "안경/선글라스",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 589,
+    "FullPath": "패션/잡화 > 안경/선글라스/소품 > 소품",
+    "ID": "1150167",
+    "Name": "소품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 590,
+    "FullPath": "패션/잡화 > 패션잡화 기타 > 넥타이/넥타이 소품",
+    "ID": "1150153",
+    "Name": "넥타이/넥타이 소품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 591,
+    "FullPath": "패션/잡화 > 패션잡화 기타 > 기타 액세서리",
+    "ID": "1150159",
+    "Name": "기타 액세서리",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 592,
+    "FullPath": "패션/잡화 > 패션잡화 기타 > 손수건/스카프/머플러",
+    "ID": "1150154",
+    "Name": "손수건/스카프/머플러",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 593,
+    "FullPath": "패션/잡화 > 패션잡화 기타 > 기타 패션잡화",
+    "ID": "1150152",
+    "Name": "기타 패션잡화",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 594,
+    "FullPath": "패션/잡화 > 패션잡화 기타 > 패션 마스크",
+    "ID": "1150155",
+    "Name": "패션 마스크",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 595,
+    "FullPath": "패션/잡화 > 패션잡화 기타 > 귀마개",
+    "ID": "1150157",
+    "Name": "귀마개",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 596,
+    "FullPath": "패션/잡화 > 패션잡화 기타 > 넥워머",
+    "ID": "1150158",
+    "Name": "넥워머",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 597,
+    "FullPath": "패션/잡화 > 지갑/벨트 > 여성 벨트",
+    "ID": "1150173",
+    "Name": "여성 벨트",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 598,
+    "FullPath": "패션/잡화 > 지갑/벨트 > 남성 지갑",
+    "ID": "1150175",
+    "Name": "남성 지갑",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 599,
+    "FullPath": "패션/잡화 > 지갑/벨트 > 여성 지갑",
+    "ID": "1150174",
+    "Name": "여성 지갑",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 600,
+    "FullPath": "패션/잡화 > 지갑/벨트 > 캐릭터 지갑/벨트/멜빵",
+    "ID": "1359092",
+    "Name": "캐릭터 지갑/벨트/멜빵",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 601,
+    "FullPath": "패션/잡화 > 지갑/벨트 > 남성 벨트",
+    "ID": "1150171",
+    "Name": "남성 벨트",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 602,
+    "FullPath": "패션/잡화 > 스타킹/양말 > 양말",
+    "ID": "1150163",
+    "Name": "양말",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 603,
+    "FullPath": "패션/잡화 > 스타킹/양말 > 스타킹",
+    "ID": "1150162",
+    "Name": "스타킹",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 604,
+    "FullPath": "패션/잡화 > 기타 의류/잡화 > 기타 제품",
+    "ID": "1154007",
+    "Name": "기타 제품",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 605,
+    "FullPath": "패션/잡화 > 우산/양산/우비 > 우산/양산",
+    "ID": "1150170",
+    "Name": "우산/양산",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 606,
+    "FullPath": "패션/잡화 > 우산/양산/우비 > 우비/레인코트",
+    "ID": "1150169",
+    "Name": "우비/레인코트",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 607,
+    "FullPath": "패션/잡화 > 우산/양산/우비 > 캐릭터 우산/우비",
+    "ID": "1359096",
+    "Name": "캐릭터 우산/우비",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 608,
+    "FullPath": "패션/잡화 > 임산부의류/용품 > 임산부 의류",
+    "ID": "1150182",
+    "Name": "임산부 의류",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  },
+  {
+    "index": 609,
+    "FullPath": "패션/잡화 > 임산부의류/용품 > 임산부 속옷/잠옷",
+    "ID": "1150181",
+    "Name": "임산부 속옷/잠옷",
+    "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a').filter({ hasText: '패션/잡화' }).first()\u001b[22m\n"
+  }
+]

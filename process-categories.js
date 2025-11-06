@@ -317,10 +317,9 @@ async function navigateToBulkCollection(browser, context, page) {
     console.log('='.repeat(60));
 
     try {
-      // Refresh page to clear any previous state (F5)
-      console.log('🔄 Refreshing page (F5)...');
-      await page.keyboard.press('F5');
-      await page.waitForLoadState('networkidle');
+      // Refresh page to clear any previous state
+      console.log('🔄 Refreshing page...');
+      await page.reload({ waitUntil: 'networkidle' });
       console.log('✅ Page refreshed\n');
 
       // Fill URL search input
@@ -328,13 +327,17 @@ async function navigateToBulkCollection(browser, context, page) {
       const urlInput = page.locator('input[placeholder*="데이터를 수집하실 검색페이지"]');
       await urlInput.fill(url);
 
+      // Wait 3 seconds before clicking search
+      console.log('⏳ Waiting 3 seconds...');
+      await page.waitForTimeout(3000);
+
       // Click URL search button and handle new tab/popup
       console.log('🔎 Clicking search button...');
 
       // Listen for new pages/tabs
       const [newPage] = await Promise.all([
         context.waitForEvent('page', { timeout: 5000 }).catch(() => null),
-        page.locator('text=URL 상품검색하기').click()
+        page.locator('a[onclick*="set_search_extension"]').click()
       ]);
 
       // If a new tab was opened, close it and stay on current page
@@ -344,9 +347,22 @@ async function navigateToBulkCollection(browser, context, page) {
         console.log('✅ Staying on current tab');
       }
 
-      // Wait for search results to load
-      console.log('⏳ Waiting for search results...');
-      await page.waitForTimeout(3000);
+      // Wait for FIRST scraping process (after clicking search button)
+      console.log('⏳ Waiting for initial product scraping...');
+      try {
+        // Wait for goods_process.gif to appear (scraping starts)
+        await page.waitForSelector('img[src*="goods_process.gif"]', { state: 'visible', timeout: 10000 });
+        console.log('📥 Initial scraping in progress (popup opening/closing)...');
+
+        // Wait for goods_process.gif to disappear (scraping complete)
+        await page.waitForSelector('img[src*="goods_process.gif"]', { state: 'hidden', timeout: 300000 }); // 5 minutes max
+        console.log('✅ Initial scraping completed!');
+
+        // Wait a bit for popup to close
+        await page.waitForTimeout(2000);
+      } catch (error) {
+        console.log('ℹ️ goods_process.gif not detected during initial scraping, continuing...');
+      }
 
       // Click "검색된 상품 모두저장" button
       console.log('💾 Clicking save all products button...');
@@ -375,23 +391,23 @@ async function navigateToBulkCollection(browser, context, page) {
       console.log('💾 Clicking save button...');
       await page.locator('a.btn-layerSave, button:has-text("저장하기"), input[value="저장하기"]').click();
 
-      // Wait for scraping process to start (goods_process.gif appears)
-      console.log('⏳ Waiting for product scraping to start...');
+      // Wait for SECOND scraping/saving process (after clicking save button)
+      console.log('⏳ Waiting for product saving to start...');
       await page.waitForTimeout(2000);
 
-      // Wait for goods_process.gif to disappear (scraping complete)
-      console.log('🔄 Waiting for product scraping to complete...');
+      // Wait for goods_process.gif to disappear (saving complete)
+      console.log('🔄 Waiting for product saving to complete (popup opening/closing)...');
       try {
-        await page.waitForSelector('img[src*="goods_process.gif"]', { state: 'visible', timeout: 5000 });
-        console.log('📥 Scraping in progress...');
+        await page.waitForSelector('img[src*="goods_process.gif"]', { state: 'visible', timeout: 10000 });
+        console.log('📥 Saving in progress...');
         await page.waitForSelector('img[src*="goods_process.gif"]', { state: 'hidden', timeout: 300000 }); // 5 minutes max
-        console.log('✅ Scraping completed!');
+        console.log('✅ Saving process completed!');
       } catch (error) {
-        console.log('ℹ️ goods_process.gif not detected or already completed');
+        console.log('ℹ️ goods_process.gif not detected during save, continuing...');
       }
 
-      // Wait for completion message in layer_page div
-      console.log('⏳ Waiting for save completion message...');
+      // Wait for final completion message in layer_page div
+      console.log('⏳ Waiting for final completion message...');
       try {
         await page.waitForFunction(
           () => {
@@ -402,9 +418,9 @@ async function navigateToBulkCollection(browser, context, page) {
             }
             return false;
           },
-          { timeout: 60000 } // 1 minute timeout
+          { timeout: 120000 } // 2 minutes timeout
         );
-        console.log('✅ Save completed successfully!');
+        console.log('✅ Save completed successfully! Message found in #layer_page');
       } catch (error) {
         console.log('⚠️ Completion message not found within timeout, but continuing...');
       }
@@ -878,81 +894,58 @@ async function main() {
   let browser = null;
   let context = null;
   let page = null;
-  let isLoggedIn = false;
 
-  // Auto login function
-  async function ensureLoggedIn() {
-    if (!isLoggedIn) {
-      console.log('🔐 Auto-login starting...');
-      try {
-        if (!browser) {
-          // Connect to existing Chrome instance via CDP
-          const CDP_URL = process.env.CDP_URL || 'http://localhost:9222';
+  try {
+    // Connect to existing Chrome instance via CDP
+    const CDP_URL = process.env.CDP_URL || 'http://localhost:9222';
 
-          console.log(`🔌 Attempting to connect to Chrome at ${CDP_URL}...`);
+    console.log(`🔌 Attempting to connect to Chrome at ${CDP_URL}...`);
 
-          try {
-            browser = await chromium.connectOverCDP(CDP_URL);
-            console.log('✅ Connected to Chrome via CDP\n');
+    browser = await chromium.connectOverCDP(CDP_URL);
+    console.log('✅ Connected to Chrome via CDP\n');
 
-            // Get the default context
-            const contexts = browser.contexts();
-            if (contexts.length === 0) {
-              throw new Error('No browser contexts found');
-            }
-            context = contexts[0];
-
-            // Get existing pages or create new one
-            const pages = context.pages();
-
-            // Close extra tabs, keep only the first one
-            if (pages.length > 1) {
-              console.log(`📑 Found ${pages.length} tabs, closing extra tabs...`);
-              for (let i = 1; i < pages.length; i++) {
-                await pages[i].close();
-              }
-              console.log(`✅ Closed ${pages.length - 1} extra tab(s)\n`);
-            }
-
-            if (pages.length > 0) {
-              page = pages[0];
-              console.log('✅ Using existing Chrome tab\n');
-            } else {
-              page = await context.newPage();
-              console.log('✅ Created new Chrome tab\n');
-            }
-
-            // Now login with the page
-            const result = await loginToSite(page);
-            page = result.page;
-            isLoggedIn = true;
-            console.log('✅ Login completed!\n');
-            return;
-
-          } catch (error) {
-            console.error('❌ Failed to connect to Chrome via CDP');
-            console.error(`Error: ${error.message}\n`);
-            console.log('📋 Please follow these steps:');
-            console.log('1. Run: start-chrome-debug.bat');
-            console.log('2. Wait for Chrome to open');
-            console.log('3. Check that Chrome shows extensions are loaded');
-            console.log('4. Then run this script again\n');
-            throw error;
-          }
-        }
-
-        // This should not be reached
-        const result = await loginToSite(page);
-        context = result.context;
-        page = result.page;
-        isLoggedIn = true;
-        console.log('✅ Login completed!\n');
-      } catch (error) {
-        console.error('❌ Login failed:', error.message);
-        isLoggedIn = false;
-        throw error;
-      }
+    // Get the default context
+    const contexts = browser.contexts();
+    if (contexts.length === 0) {
+      throw new Error('No browser contexts found');
     }
+    context = contexts[0];
+
+    // Get existing pages or create new one
+    const pages = context.pages();
+
+    // Close extra tabs, keep only the first one
+    if (pages.length > 1) {
+      console.log(`📑 Found ${pages.length} tabs, closing extra tabs...`);
+      for (let i = 1; i < pages.length; i++) {
+        await pages[i].close();
+      }
+      console.log(`✅ Closed ${pages.length - 1} extra tab(s)\n`);
+    }
+
+    if (pages.length > 0) {
+      page = pages[0];
+      console.log('✅ Using existing Chrome tab\n');
+    } else {
+      page = await context.newPage();
+      console.log('✅ Created new Chrome tab\n');
+    }
+
+    // Auto login immediately
+    console.log('🔐 Auto-login starting...');
+    const result = await loginToSite(page);
+    page = result.page;
+    console.log('✅ Login completed!\n');
+
+  } catch (error) {
+    console.error('❌ Failed to connect to Chrome via CDP');
+    console.error(`Error: ${error.message}\n`);
+    console.log('📋 Please follow these steps:');
+    console.log('1. Run: npm run process');
+    console.log('2. Wait for Chrome to open');
+    console.log('3. Check that Chrome shows extensions are loaded');
+    console.log('4. Then run this script again\n');
+    process.exit(1);
   }
 
   while (true) {
@@ -967,10 +960,7 @@ async function main() {
     }
 
     if (choice === '1') {
-      // Auto login if not logged in
       try {
-        await ensureLoggedIn();
-
         // Navigate to bulk product collection page and process
         await navigateToBulkCollection(browser, context, page);
       } catch (error) {
@@ -980,10 +970,7 @@ async function main() {
     }
 
     if (choice === '2') {
-      // Auto login if not logged in
       try {
-        await ensureLoggedIn();
-
         // Navigate to category management page
         await navigateToCategoryManagement(page);
 
