@@ -4,7 +4,9 @@
   "description": "Playwright login automation script",
   "main": "login.js",
   "scripts": {
-    "login": "node login.js"
+    "login": "node login.js",
+    "process": "powershell -ExecutionPolicy Bypass -File .\\크롬시작.ps1 && node process-categories.js",
+    "process-only": "node process-categories.js"
   },
   "keywords": [
     "playwright",
@@ -12,15 +14,11 @@
   ],
   "author": "",
   "license": "ISC",
-  "scripts": {
-    "login": "node login.js",
-    "process": "powershell -ExecutionPolicy Bypass -File .\\크롬시작.ps1 && node process-categories.js",
-    "process-only": "node process-categories.js"
-  },
   "dependencies": {
-    "playwright": "^1.40.0",
     "csv-parse": "^5.5.0",
     "csv-stringify": "^6.4.0",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "inquirer": "^8.2.7",
+    "playwright": "^1.40.0"
   }
 }

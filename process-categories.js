@@ -1,8 +1,10 @@
 const { chromium } = require('playwright');
 const fs = require('fs');
+const path = require('path');
 const { parse } = require('csv-parse/sync');
 const { stringify } = require('csv-stringify/sync');
 const readline = require('readline');
+const inquirer = require('inquirer');
 require('dotenv').config();
 
 // Create readline interface for user input
@@ -215,20 +217,68 @@ async function loginToSite(contextOrPage) {
 async function navigateToBulkCollection(browser, context, page) {
   console.log('🛒 Starting bulk product collection...');
 
-  // Ask user for CSV file path
-  const rl = createReadlineInterface();
-  const csvPath = await new Promise((resolve) => {
-    rl.question('CSV 파일 경로를 입력하세요 (기본: ./상품 카테고리 수집 URL/상품 카테고리 수집 URL - 11번가 아마존(섬김Trade).csv): ', (answer) => {
-      rl.close();
-      resolve(answer.trim() || './상품 카테고리 수집 URL/상품 카테고리 수집 URL - 11번가 아마존(섬김Trade).csv');
+  // Find all CSV files in the project and subdirectories
+  const csvFolder = path.join(__dirname, '상품 카테고리 수집 URL');
+  let csvFiles = [];
+
+  try {
+    if (fs.existsSync(csvFolder)) {
+      const files = fs.readdirSync(csvFolder);
+      csvFiles = files
+        .filter(file => file.endsWith('.csv'))
+        .map(file => ({
+          name: file,
+          value: path.join(csvFolder, file)
+        }));
+    }
+  } catch (error) {
+    console.error(`⚠️ Error reading CSV folder: ${error.message}`);
+  }
+
+  // If no CSV files found, use default path
+  if (csvFiles.length === 0) {
+    csvFiles.push({
+      name: '상품 카테고리 수집 URL - 11번가 아마존(섬김Trade).csv (기본)',
+      value: './상품 카테고리 수집 URL/상품 카테고리 수집 URL - 11번가 아마존(섬김Trade).csv'
     });
+  }
+
+  // Add option to enter custom path
+  csvFiles.push({
+    name: '📝 직접 입력...',
+    value: 'CUSTOM'
   });
 
+  // Ask user to select CSV file
+  const { csvPath } = await inquirer.prompt([
+    {
+      type: 'list',
+      name: 'csvPath',
+      message: 'CSV 파일을 선택하세요:',
+      choices: csvFiles,
+      pageSize: 10
+    }
+  ]);
+
+  // If user chose custom input
+  let finalCsvPath = csvPath;
+  if (csvPath === 'CUSTOM') {
+    const { customPath } = await inquirer.prompt([
+      {
+        type: 'input',
+        name: 'customPath',
+        message: 'CSV 파일 경로를 입력하세요:',
+        default: './상품 카테고리 수집 URL/상품 카테고리 수집 URL - 11번가 아마존(섬김Trade).csv'
+      }
+    ]);
+    finalCsvPath = customPath;
+  }
+
   // Read CSV file
-  console.log(`📄 Reading CSV file: ${csvPath}...`);
+  console.log(`📄 Reading CSV file: ${finalCsvPath}...`);
   let csvContent;
   try {
-    csvContent = fs.readFileSync(csvPath, 'utf-8');
+    csvContent = fs.readFileSync(finalCsvPath, 'utf-8');
   } catch (error) {
     console.error(`❌ Failed to read CSV file: ${error.message}`);
     return;
