@@ -491,6 +491,13 @@ async function modifyCollectionConditions(page) {
     await page.waitForLoadState('networkidle');
     console.log('✅ 페이지 로드 완료\n');
 
+    // Change view to 100 items per page
+    console.log('📊 100개씩 보기로 변경...');
+    const viewSelect = page.locator('select#ft_num');
+    await viewSelect.selectOption('100');
+    await page.waitForLoadState('networkidle');
+    console.log('✅ 100개씩 보기 설정 완료\n');
+
     // Enter search keyword
     console.log(`🔍 검색어 입력: ${keyword}`);
     const keywordInput = page.locator('input[name="sch_keyword"]');
@@ -502,15 +509,6 @@ async function modifyCollectionConditions(page) {
     await page.waitForLoadState('networkidle');
     console.log('✅ 검색 완료\n');
 
-    // Get all collection count spans
-    const countSpans = await page.locator('span[id^="div_uid_count_"]').all();
-    console.log(`📊 검색된 필터 개수: ${countSpans.length}\n`);
-
-    if (countSpans.length === 0) {
-      console.log('⚠️ 검색 결과가 없습니다.');
-      return;
-    }
-
     // Setup dialog handler for alerts
     page.on('dialog', async (dialog) => {
       console.log(`   📢 Alert: ${dialog.message()}`);
@@ -518,82 +516,144 @@ async function modifyCollectionConditions(page) {
     });
 
     const userInputCount = parseInt(collectionCount);
-    let successCount = 0;
-    let failCount = 0;
+    let totalSuccessCount = 0;
+    let totalFailCount = 0;
+    let totalSkippedCount = 0;
+    let currentPage = 1;
+    let hasNextPage = true;
 
-    // Process each filter
-    for (let i = 0; i < countSpans.length; i++) {
-      try {
-        console.log(`\n${'='.repeat(50)}`);
-        console.log(`처리 중: ${i + 1}/${countSpans.length}`);
-        console.log('='.repeat(50));
+    // Process all pages
+    while (hasNextPage) {
+      console.log(`\n${'='.repeat(60)}`);
+      console.log(`📄 페이지 ${currentPage} 처리 중`);
+      console.log('='.repeat(60));
 
-        // Get current count
-        const countSpan = page.locator('span[id^="div_uid_count_"]').nth(i);
-        const countText = await countSpan.textContent();
-        const currentCount = parseInt(countText.replace('개', '').trim());
-        const newCount = userInputCount - currentCount;
+      // Get all collection count spans on current page
+      const countSpans = await page.locator('span[id^="div_uid_count_"]').all();
+      console.log(`현재 페이지 필터 개수: ${countSpans.length}\n`);
 
-        console.log(`현재 수집 개수: ${currentCount}`);
-        console.log(`계산된 입력 값: ${newCount} (${userInputCount} - ${currentCount})`);
+      if (countSpans.length === 0) {
+        console.log('⚠️ 검색 결과가 없습니다.');
+        break;
+      }
 
-        // Click modify button for this row
-        const modifyButtons = await page.locator('a:has-text("수집조건수정")').all();
-        console.log('\"수집조건수정\" 버튼 클릭...');
-        await modifyButtons[i].click();
-        await page.waitForTimeout(1500);
+      // Get page HTML to extract collected counts
+      const pageHTML = await page.content();
+      const collectedRegex = /수집개수<\/font>:\s*(\d+)개/g;
+      const collectedMatches = [...pageHTML.matchAll(collectedRegex)];
 
-        // Find the popup page
-        const context = page.context();
-        const allPages = context.pages();
-        let modifyPage = null;
+      // Process each filter on current page
+      let processedOnPage = 0;
 
-        for (const p of allPages) {
-          if (p.url().includes('admin_group_modify.php')) {
-            modifyPage = p;
-            break;
+      for (let i = 0; i < countSpans.length; i++) {
+        try {
+          console.log(`\n${'='.repeat(50)}`);
+          console.log(`항목 ${i + 1}/${countSpans.length} (페이지 ${currentPage})`);
+          console.log('='.repeat(50));
+
+          // Get saved count (저장된 수집수)
+          const countSpan = page.locator('span[id^="div_uid_count_"]').nth(i);
+          const countText = await countSpan.textContent();
+          const savedCount = parseInt(countText.replace('개', '').trim());
+
+          // Get collected count (수집개수)
+          const collectedCount = collectedMatches[i] ? parseInt(collectedMatches[i][1]) : 0;
+
+          // Calculate total
+          const totalCount = savedCount + collectedCount;
+
+          console.log(`저장된 수집수: ${savedCount}개`);
+          console.log(`수집개수: ${collectedCount}개`);
+          console.log(`합계: ${totalCount}개 / 목표: ${userInputCount}개`);
+
+          // Check if modification is needed
+          if (totalCount >= userInputCount) {
+            console.log('✅ 이미 목표에 도달. 건너뛰기.');
+            totalSkippedCount++;
+            continue;
           }
+
+          // Calculate new value to enter
+          const newCount = userInputCount - collectedCount;
+          console.log(`계산된 입력 값: ${newCount} (${userInputCount} - ${collectedCount})`);
+
+          // Click modify button for this row
+          const modifyButtons = await page.locator('a:has-text("수집조건수정")').all();
+          console.log('"수집조건수정" 버튼 클릭...');
+          await modifyButtons[i].click();
+          await page.waitForTimeout(1500);
+
+          // Find the popup page
+          const context = page.context();
+          const allPages = context.pages();
+          let modifyPage = null;
+
+          for (const p of allPages) {
+            if (p.url().includes('admin_group_modify.php')) {
+              modifyPage = p;
+              break;
+            }
+          }
+
+          if (!modifyPage) {
+            console.log('⚠️ 팝업 페이지를 찾을 수 없습니다. 다음 항목으로...');
+            totalFailCount++;
+            continue;
+          }
+
+          // Setup dialog handler for popup
+          modifyPage.on('dialog', async (dialog) => {
+            console.log(`   📢 Popup Alert: ${dialog.message()}`);
+            await dialog.accept();
+          });
+
+          // Modify the count
+          const limitCountInput = modifyPage.locator('input[name="limit_count"]');
+          await limitCountInput.clear();
+          await limitCountInput.fill(newCount.toString());
+          console.log(`✅ 값 ${newCount} 입력 완료`);
+
+          // Save
+          console.log('저장 중...');
+          await modifyPage.locator('a[onclick="set_save();"]').click();
+          await page.waitForTimeout(2000);
+          console.log('✅ 저장 완료');
+
+          totalSuccessCount++;
+          processedOnPage++;
+
+        } catch (error) {
+          console.error(`❌ 오류 발생: ${error.message}`);
+          totalFailCount++;
         }
+      }
 
-        if (!modifyPage) {
-          console.log('⚠️ 팝업 페이지를 찾을 수 없습니다. 다음 항목으로...');
-          failCount++;
-          continue;
-        }
+      console.log(`\n📊 페이지 ${currentPage} 완료: 처리 ${processedOnPage}개`);
 
-        // Setup dialog handler for popup
-        modifyPage.on('dialog', async (dialog) => {
-          console.log(`   📢 Popup Alert: ${dialog.message()}`);
-          await dialog.accept();
-        });
+      // Check for next page
+      const nextPageLink = page.locator('a:has-text("다음")').first();
+      const nextPageExists = await nextPageLink.count() > 0;
 
-        // Modify the count
-        const limitCountInput = modifyPage.locator('input[name="limit_count"]');
-        await limitCountInput.clear();
-        await limitCountInput.fill(newCount.toString());
-        console.log(`✅ 값 ${newCount} 입력 완료`);
-
-        // Save
-        console.log('저장 중...');
-        await modifyPage.locator('a[onclick="set_save();"]').click();
-        await page.waitForTimeout(2000);
-        console.log('✅ 저장 완료');
-
-        successCount++;
-
-      } catch (error) {
-        console.error(`❌ 오류 발생: ${error.message}`);
-        failCount++;
+      if (nextPageExists) {
+        console.log('\n➡️ 다음 페이지로 이동 중...');
+        await nextPageLink.click();
+        await page.waitForLoadState('networkidle');
+        currentPage++;
+      } else {
+        console.log('\n✅ 마지막 페이지입니다.');
+        hasNextPage = false;
       }
     }
 
-    // Summary
+    // Final Summary
     console.log(`\n${'='.repeat(60)}`);
-    console.log('🎉 수집조건 수정 완료');
+    console.log('🎉 전체 수집조건 수정 완료');
     console.log('='.repeat(60));
-    console.log(`✅ 성공: ${successCount}개`);
-    console.log(`❌ 실패: ${failCount}개`);
-    console.log(`📊 총 처리: ${countSpans.length}개\n`);
+    console.log(`✅ 수정 성공: ${totalSuccessCount}개`);
+    console.log(`⏭️ 건너뛰기: ${totalSkippedCount}개`);
+    console.log(`❌ 실패: ${totalFailCount}개`);
+    console.log(`📊 총 확인: ${totalSuccessCount + totalSkippedCount + totalFailCount}개`);
+    console.log(`📄 처리한 페이지: ${currentPage}개\n`);
 
   } catch (error) {
     console.error('❌ 오류 발생:', error.message);
