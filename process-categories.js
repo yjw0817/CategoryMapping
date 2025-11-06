@@ -1132,11 +1132,27 @@ async function main() {
       console.log('✅ Created new Chrome tab\n');
     }
 
-    // Auto login immediately
-    console.log('🔐 Auto-login starting...');
-    const result = await loginToSite(page);
-    page = result.page;
-    console.log('✅ Login completed!\n');
+    // Check login status and navigate accordingly
+    console.log('🔐 Checking login status...');
+
+    // Check if already logged in by checking current URL
+    const currentUrl = page.url();
+
+    if (currentUrl.includes('mall/admin/admin.php') && !currentUrl.includes('login')) {
+      console.log('✅ Already logged in!\n');
+    } else {
+      // Need to login
+      console.log('📝 Login required. Logging in...\n');
+      const result = await loginToSite(page);
+      page = result.page;
+      console.log('✅ Login completed!\n');
+
+      // Navigate to admin page after login
+      console.log('🔄 Navigating to admin page...');
+      await page.goto('https://tmg4696.mycafe24.com/mall/admin/admin.php');
+      await page.waitForLoadState('networkidle');
+      console.log('✅ Ready!\n');
+    }
 
   } catch (error) {
     console.error('❌ Failed to connect to Chrome via CDP');
