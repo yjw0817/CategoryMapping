@@ -317,9 +317,9 @@ async function navigateToBulkCollection(browser, context, page) {
     console.log('='.repeat(60));
 
     try {
-      // Refresh page to clear any previous state
-      console.log('🔄 Refreshing page...');
-      await page.reload();
+      // Refresh page to clear any previous state (F5)
+      console.log('🔄 Refreshing page (F5)...');
+      await page.keyboard.press('F5');
       await page.waitForLoadState('networkidle');
       console.log('✅ Page refreshed\n');
 
