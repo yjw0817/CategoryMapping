@@ -328,10 +328,6 @@ async function navigateToBulkCollection(browser, context, page) {
       const urlInput = page.locator('input[placeholder*="데이터를 수집하실 검색페이지"]');
       await urlInput.fill(url);
 
-      // Wait 3 seconds before clicking search
-      console.log('⏳ Waiting 3 seconds...');
-      await page.waitForTimeout(3000);
-
       // Click URL search button (let popups open/close automatically)
       console.log('🔎 Clicking search button...');
       await page.locator('a[onclick*="set_search_extension"]').click();
