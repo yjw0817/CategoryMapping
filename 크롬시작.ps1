@@ -19,6 +19,4 @@ try {
     Write-Host "Please check if Chrome opened successfully." -ForegroundColor Red
 }
 
-Write-Host "`nOnce Chrome is fully loaded, run: npm run process" -ForegroundColor Cyan
-Write-Host "Press any key to continue..."
-$null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+Write-Host "`nChrome is ready for automation!" -ForegroundColor Cyan
