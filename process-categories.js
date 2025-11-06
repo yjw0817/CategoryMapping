@@ -502,6 +502,99 @@ async function modifyCollectionConditions(page) {
     await page.waitForLoadState('networkidle');
     console.log('✅ 검색 완료\n');
 
+    // Get all collection count spans
+    const countSpans = await page.locator('span[id^="div_uid_count_"]').all();
+    console.log(`📊 검색된 필터 개수: ${countSpans.length}\n`);
+
+    if (countSpans.length === 0) {
+      console.log('⚠️ 검색 결과가 없습니다.');
+      return;
+    }
+
+    // Setup dialog handler for alerts
+    page.on('dialog', async (dialog) => {
+      console.log(`   📢 Alert: ${dialog.message()}`);
+      await dialog.accept();
+    });
+
+    const userInputCount = parseInt(collectionCount);
+    let successCount = 0;
+    let failCount = 0;
+
+    // Process each filter
+    for (let i = 0; i < countSpans.length; i++) {
+      try {
+        console.log(`\n${'='.repeat(50)}`);
+        console.log(`처리 중: ${i + 1}/${countSpans.length}`);
+        console.log('='.repeat(50));
+
+        // Get current count
+        const countSpan = page.locator('span[id^="div_uid_count_"]').nth(i);
+        const countText = await countSpan.textContent();
+        const currentCount = parseInt(countText.replace('개', '').trim());
+        const newCount = userInputCount - currentCount;
+
+        console.log(`현재 수집 개수: ${currentCount}`);
+        console.log(`계산된 입력 값: ${newCount} (${userInputCount} - ${currentCount})`);
+
+        // Click modify button for this row
+        const modifyButtons = await page.locator('a:has-text("수집조건수정")').all();
+        console.log('\"수집조건수정\" 버튼 클릭...');
+        await modifyButtons[i].click();
+        await page.waitForTimeout(1500);
+
+        // Find the popup page
+        const context = page.context();
+        const allPages = context.pages();
+        let modifyPage = null;
+
+        for (const p of allPages) {
+          if (p.url().includes('admin_group_modify.php')) {
+            modifyPage = p;
+            break;
+          }
+        }
+
+        if (!modifyPage) {
+          console.log('⚠️ 팝업 페이지를 찾을 수 없습니다. 다음 항목으로...');
+          failCount++;
+          continue;
+        }
+
+        // Setup dialog handler for popup
+        modifyPage.on('dialog', async (dialog) => {
+          console.log(`   📢 Popup Alert: ${dialog.message()}`);
+          await dialog.accept();
+        });
+
+        // Modify the count
+        const limitCountInput = modifyPage.locator('input[name="limit_count"]');
+        await limitCountInput.clear();
+        await limitCountInput.fill(newCount.toString());
+        console.log(`✅ 값 ${newCount} 입력 완료`);
+
+        // Save
+        console.log('저장 중...');
+        await modifyPage.locator('a[onclick="set_save();"]').click();
+        await page.waitForTimeout(2000);
+        console.log('✅ 저장 완료');
+
+        successCount++;
+
+      } catch (error) {
+        console.error(`❌ 오류 발생: ${error.message}`);
+        failCount++;
+      }
+    }
+
+    // Summary
+    console.log(`\n${'='.repeat(60)}`);
+    console.log('🎉 수집조건 수정 완료');
+    console.log('='.repeat(60));
+    console.log(`✅ 성공: ${successCount}개`);
+    console.log(`❌ 실패: ${failCount}개`);
+    console.log(`📊 총 처리: ${countSpans.length}개\n`);
+
   } catch (error) {
     console.error('❌ 오류 발생:', error.message);
   }
