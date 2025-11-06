@@ -876,6 +876,16 @@ async function main() {
 
             // Get existing pages or create new one
             const pages = context.pages();
+
+            // Close extra tabs, keep only the first one
+            if (pages.length > 1) {
+              console.log(`📑 Found ${pages.length} tabs, closing extra tabs...`);
+              for (let i = 1; i < pages.length; i++) {
+                await pages[i].close();
+              }
+              console.log(`✅ Closed ${pages.length - 1} extra tab(s)\n`);
+            }
+
             if (pages.length > 0) {
               page = pages[0];
               console.log('✅ Using existing Chrome tab\n');
