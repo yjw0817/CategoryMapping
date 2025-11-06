@@ -322,12 +322,24 @@ async function navigateToBulkCollection(browser, context, page) {
       const urlInput = page.locator('input[placeholder*="데이터를 수집하실 검색페이지"]');
       await urlInput.fill(url);
 
-      // Click URL search button
+      // Click URL search button and handle new tab/popup
       console.log('🔎 Clicking search button...');
-      await page.locator('text=URL 상품검색하기').click();
 
-      // Wait for popup to open and close
-      console.log('⏳ Waiting for popup...');
+      // Listen for new pages/tabs
+      const [newPage] = await Promise.all([
+        context.waitForEvent('page', { timeout: 5000 }).catch(() => null),
+        page.locator('text=URL 상품검색하기').click()
+      ]);
+
+      // If a new tab was opened, close it and stay on current page
+      if (newPage) {
+        console.log('📑 New tab detected, closing it...');
+        await newPage.close();
+        console.log('✅ Staying on current tab');
+      }
+
+      // Wait for search results to load
+      console.log('⏳ Waiting for search results...');
       await page.waitForTimeout(3000);
 
       // Click "검색된 상품 모두저장" button
