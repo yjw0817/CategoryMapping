@@ -13,8 +13,8 @@ try {
 }
 
 Write-Host "`nStarting Chrome with Remote Debugging on port 9223..." -ForegroundColor Cyan
-Write-Host "Opening login page..." -ForegroundColor Yellow
-Start-Process "C:\Program Files\Google\Chrome\Application\chrome.exe" -ArgumentList "--remote-debugging-port=9223", "--user-data-dir=$env:LOCALAPPDATA\Google\Chrome\User Data", "--no-first-run", "--no-default-browser-check", "--app=https://tmg4696.mycafe24.com/mall/admin/admin.php"
+Write-Host "Opening admin page..." -ForegroundColor Yellow
+Start-Process "C:\Program Files\Google\Chrome\Application\chrome.exe" -ArgumentList "--remote-debugging-port=9223", "--user-data-dir=$env:LOCALAPPDATA\Google\Chrome\User Data", "--no-first-run", "--no-default-browser-check", "--disable-session-crashed-bubble", "--disable-restore-session-state", "--app=https://tmg4696.mycafe24.com/mall/admin/admin.php"
 
 Write-Host "Waiting for Chrome to start..." -ForegroundColor Yellow
 Start-Sleep -Seconds 8
