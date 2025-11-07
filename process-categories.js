@@ -1112,24 +1112,34 @@ async function main() {
     }
     context = contexts[0];
 
-    // Get existing pages or create new one
+    // Get existing pages
     const pages = context.pages();
+    console.log(`📑 Found ${pages.length} tab(s)`);
 
-    // Close extra tabs, keep only the first one
-    if (pages.length > 1) {
-      console.log(`📑 Found ${pages.length} tabs, closing extra tabs...`);
-      for (let i = 1; i < pages.length; i++) {
-        await pages[i].close();
+    // Find the admin page tab (if exists)
+    let adminPage = null;
+    for (const p of pages) {
+      const url = p.url();
+      if (url.includes('tmg4696.mycafe24.com')) {
+        adminPage = p;
+        break;
       }
-      console.log(`✅ Closed ${pages.length - 1} extra tab(s)\n`);
     }
 
-    if (pages.length > 0) {
-      page = pages[0];
-      console.log('✅ Using existing Chrome tab\n');
+    // Close all other tabs (including data:/ tab)
+    for (const p of pages) {
+      if (p !== adminPage) {
+        await p.close();
+      }
+    }
+
+    // Use admin page or create new one
+    if (adminPage) {
+      page = adminPage;
+      console.log('✅ Using existing admin tab\n');
     } else {
       page = await context.newPage();
-      console.log('✅ Created new Chrome tab\n');
+      console.log('✅ Created new tab\n');
     }
 
     // Check login status and navigate accordingly
