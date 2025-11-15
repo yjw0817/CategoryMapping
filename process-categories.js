@@ -944,25 +944,20 @@ async function extractCoupangDistributionRequests(gmailPages) {
           console.log(`     Subject: ${emailData.subject}`);
           console.log(`     Date: ${emailData.date}`);
 
-          // CLIENT-SIDE FILTERING: Check if email matches all criteria
-          const senderMatch = emailData.sender && emailData.sender.toLowerCase().includes('sellergating@coupang.com');
+          // CLIENT-SIDE FILTERING: Check if email matches criteria
+          // (sender and review status already filtered by Gmail search)
           const subjectMatch = emailData.subject && emailData.subject.includes('유통경로 확인 요청 안내');
 
-          // Check if user already replied (look for reply elements in DOM)
+          // Check if user already replied (look for user's email in reply section)
           const hasReplied = await page.evaluate((userEmail) => {
-            // Check for user's email in reply section
             const userReplySpan = document.querySelector(`span.gD[email="${userEmail}"]`);
-            // Check for "to Coupang" text
-            const toCoupangSpan = document.querySelector('span.hb');
-            const hasToCoupang = toCoupangSpan && toCoupangSpan.textContent.includes('to') &&
-                                toCoupangSpan.textContent.includes('Coupang');
-
-            return !!(userReplySpan && hasToCoupang);
+            return !!userReplySpan;
           }, email);
 
-          if (!senderMatch || !subjectMatch || hasReplied) {
+          console.log(`     Reply Check: hasReplied=${hasReplied}`);
+
+          if (!subjectMatch || hasReplied) {
             console.log(`     ⚠️  Email doesn't match criteria - skipping`);
-            if (!senderMatch) console.log(`        - Wrong sender: ${emailData.sender}`);
             if (!subjectMatch) console.log(`        - Wrong subject: ${emailData.subject}`);
             if (hasReplied) console.log(`        - Already replied to this email`);
 
