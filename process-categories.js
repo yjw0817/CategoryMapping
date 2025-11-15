@@ -26,10 +26,11 @@ async function showMainMenu() {
     console.log('1. 사이트 대량상품수집');
     console.log('2. 카테고리 매핑');
     console.log('3. 수집조건 수정');
-    console.log('4. 닫기');
+    console.log('4. 유통경로확인요청 응답메일 보내기');
+    console.log('5. 닫기');
     console.log('='.repeat(60));
 
-    rl.question('선택하세요 (1-4): ', (answer) => {
+    rl.question('선택하세요 (1-5): ', (answer) => {
       rl.close();
       resolve(answer.trim());
     });
@@ -660,6 +661,595 @@ async function modifyCollectionConditions(page) {
   }
 }
 
+// Open Gmail tabs for multiple accounts
+async function openGmailTabs(context) {
+  console.log('\n📧 Opening Gmail tabs...');
+
+  // Parse Gmail accounts from environment variable
+  const gmailAccountsEnv = process.env.GMAIL_ACCOUNTS || '';
+
+  if (!gmailAccountsEnv) {
+    console.log('❌ No Gmail accounts found in .env file');
+    console.log('   Please add GMAIL_ACCOUNTS to .env file');
+    console.log('   Format: GMAIL_ACCOUNTS=email1@gmail.com,email2@gmail.com');
+    return [];
+  }
+
+  const accounts = gmailAccountsEnv.split(',').map(email => {
+    return { email: email.trim() };
+  });
+
+  console.log(`✅ Found ${accounts.length} Gmail account(s)\n`);
+
+  const gmailPages = [];
+
+  for (let i = 0; i < accounts.length; i++) {
+    const account = accounts[i];
+
+    try {
+      console.log(`${'='.repeat(60)}`);
+      console.log(`📧 Opening Gmail for: ${account.email} (${i + 1}/${accounts.length})`);
+      console.log('='.repeat(60));
+
+      // Create new tab
+      const gmailPage = await context.newPage();
+
+      // Navigate to Gmail with account slot (u/0, u/1, u/2, etc.)
+      const gmailUrl = `https://mail.google.com/mail/u/${i}`;
+
+      console.log(`🌐 Navigating to Gmail (account slot ${i})...`);
+      console.log(`   Target account: ${account.email}`);
+
+      await gmailPage.goto(gmailUrl, {
+        waitUntil: 'domcontentloaded',
+        timeout: 10000
+      });
+
+      // Wait a bit for page to load
+      await gmailPage.waitForTimeout(2000);
+
+      // Check if already logged in
+      const url = gmailPage.url();
+      if (url.includes('mail.google.com/mail')) {
+        console.log(`✅ Gmail loaded (account slot ${i})`);
+      } else if (url.includes('accounts.google.com')) {
+        console.log(`🔑 Login page - Please add account: ${account.email}`);
+      } else {
+        console.log(`✅ Gmail loaded`);
+      }
+
+      console.log(`   URL: ${url.substring(0, 60)}...\n`);
+
+      gmailPages.push({
+        page: gmailPage,
+        email: account.email
+      });
+
+      // Small delay between opening tabs
+      await gmailPage.waitForTimeout(1000);
+
+    } catch (error) {
+      console.error(`❌ Error opening Gmail for ${account.email}:`, error.message);
+    }
+  }
+
+  console.log(`\n${'='.repeat(60)}`);
+  console.log(`✅ Opened ${gmailPages.length}/${accounts.length} Gmail tab(s)`);
+  console.log('='.repeat(60));
+
+  // Check login status
+  const loggedInCount = gmailPages.filter(p => p.page.url().includes('mail.google.com/mail')).length;
+  const loginNeededCount = gmailPages.filter(p => p.page.url().includes('accounts.google.com')).length;
+
+  console.log(`📊 Status:`);
+  console.log(`   ✅ Already logged in: ${loggedInCount}`);
+  console.log(`   🔑 Login needed: ${loginNeededCount}`);
+
+  if (loginNeededCount > 0) {
+    console.log(`\n💡 How to add accounts:`);
+    console.log(`   1. Click profile icon in the Gmail tab`);
+    console.log(`   2. Select "다른 계정 추가" (Add another account)`);
+    console.log(`   3. Login with the account shown above`);
+    console.log(`   4. Once added, this account will be remembered for next time!`);
+  } else if (accounts.length > 1) {
+    console.log(`\n✅ All accounts are ready!`);
+    console.log(`   Each tab should show a different account now.`);
+  }
+
+  console.log('');
+
+  return gmailPages;
+}
+
+// Extract product IDs from Coupang distribution channel confirmation emails
+async function extractCoupangDistributionRequests(gmailPages) {
+  console.log('\n📧 Extracting Coupang distribution channel requests...\n');
+
+  const allResults = [];
+
+  for (let i = 0; i < gmailPages.length; i++) {
+    const { page, email } = gmailPages[i];
+
+    try {
+      console.log(`${'='.repeat(60)}`);
+      console.log(`📧 Processing account: ${email} (${i + 1}/${gmailPages.length})`);
+      console.log('='.repeat(60));
+
+      // Check if logged in
+      if (!page.url().includes('mail.google.com/mail')) {
+        console.log('⚠️  Not logged in, skipping...\n');
+        continue;
+      }
+
+      // Navigate to inbox if not already there
+      console.log('🔍 Searching for emails from sellergating@coupang.com...');
+
+      // Navigate to inbox first
+      await page.goto(`https://mail.google.com/mail/u/${i}/#inbox`, {
+        waitUntil: 'domcontentloaded',
+        timeout: 10000
+      });
+
+      await page.waitForTimeout(2000);
+
+      // Calculate date 10 days ago
+      const tenDaysAgo = new Date();
+      tenDaysAgo.setDate(tenDaysAgo.getDate() - 10);
+      const dateStr = `${tenDaysAgo.getFullYear()}/${tenDaysAgo.getMonth() + 1}/${tenDaysAgo.getDate()}`;
+
+      // Use Gmail search UI - type in search box and click search
+      // -{심사종료} excludes emails with "심사종료" in the subject
+      const searchQuery = `from:(sellergating@coupang.com) subject:(유통경로 확인 요청 안내) 심사중 -{심사종료} after:${dateStr}`;
+
+      console.log(`   Query: ${searchQuery}`);
+
+      // Find and focus search input
+      const searchInput = await page.locator('input[aria-label="Search mail"], input.gb_ye').first();
+      await searchInput.click();
+      await page.waitForTimeout(500);
+
+      // Clear and type search query
+      await searchInput.fill(searchQuery);
+      await page.waitForTimeout(1000);
+
+      // Press Enter to search
+      await searchInput.press('Enter');
+      await page.waitForTimeout(3000); // Wait for search results to load
+
+      // Verify we're on search results page and save the URL
+      let searchResultsUrl = page.url();
+      console.log(`   Current URL: ${searchResultsUrl}`);
+
+      if (!searchResultsUrl.includes('#search') && !searchResultsUrl.includes('search/')) {
+        console.log('⚠️  Search did not navigate to results page. Retrying...');
+        await page.waitForTimeout(2000);
+        searchResultsUrl = page.url();
+      }
+
+      // Get email list
+      console.log('📬 Loading email list...');
+
+      // Wait for email list to be visible
+      await page.waitForTimeout(2000);
+
+      // Count email rows using page.evaluate for better stability
+      // Use second grid table (search results)
+      const emailCount = await page.evaluate(() => {
+        const gridTables = document.querySelectorAll('table[role="grid"].F.cf.zt');
+
+        // Use second grid table if available
+        if (gridTables.length < 2) return 0;
+
+        const searchTable = gridTables[1];
+        const rows = searchTable.querySelectorAll('tbody tr.zA');
+
+        return rows.length;
+      });
+
+      console.log(`✅ Found ${emailCount} email(s)`);
+
+      if (emailCount === 0) {
+        console.log('ℹ️  No matching emails found for this account.\n');
+        continue;
+      }
+
+      if (emailCount > 20) {
+        console.log(`⚠️  Large number of emails detected. This may take a while...`);
+        console.log(`   Estimated time: ~${Math.ceil(emailCount * 5 / 60)} minutes\n`);
+      } else {
+        console.log('');
+      }
+
+      const accountResults = {
+        account: email,
+        emails: []
+      };
+
+      let successCount = 0;
+      let errorCount = 0;
+
+      // Click first email to start
+      if (emailCount > 0) {
+        const firstClicked = await page.evaluate(() => {
+          const gridTables = document.querySelectorAll('table[role="grid"].F.cf.zt');
+
+          if (gridTables.length < 2) {
+            console.log('Second grid table not found');
+            return false;
+          }
+
+          const secondTable = gridTables[1];
+          const firstRow = secondTable.querySelector('tbody tr.zA');
+
+          if (!firstRow) {
+            console.log('First row not found in second table');
+            return false;
+          }
+
+          // Click on the link element inside the row
+          const linkElement = firstRow.querySelector('div.xS[role="link"]');
+          if (linkElement) {
+            linkElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            setTimeout(() => linkElement.click(), 300);
+            return true;
+          } else {
+            // Fallback to clicking the row itself
+            firstRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            setTimeout(() => firstRow.click(), 300);
+            return true;
+          }
+        });
+
+        if (!firstClicked) {
+          console.log('⚠️  Could not click first email\n');
+          continue;
+        }
+
+        await page.waitForTimeout(3000);
+      }
+
+      // Process each email
+      for (let j = 0; j < emailCount; j++) {
+        try {
+          console.log(`  📨 Processing email ${j + 1}/${emailCount}...`);
+
+          // Extract email info
+          const emailData = await page.evaluate(() => {
+            // Get subject
+            const subjectElement = document.querySelector('h2.hP');
+            const subject = subjectElement ? subjectElement.textContent.trim() : '';
+
+            // Get sender email address
+            const senderElement = document.querySelector('span.go');
+            let sender = '';
+            if (senderElement) {
+              const emailMatch = senderElement.getAttribute('email') ||
+                                senderElement.textContent.match(/<(.+?)>/) ||
+                                senderElement.textContent.match(/([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/);
+              sender = emailMatch ? (typeof emailMatch === 'string' ? emailMatch : emailMatch[1]) : '';
+            }
+
+            // Get date
+            const dateElement = document.querySelector('span.g3');
+            const date = dateElement ? dateElement.getAttribute('title') || dateElement.textContent : '';
+
+            // Get email body
+            const bodyElement = document.querySelector('div.a3s.aiL');
+            const bodyText = bodyElement ? bodyElement.textContent : '';
+
+            return { subject, sender, date, bodyText };
+          });
+
+          console.log(`     Sender: ${emailData.sender}`);
+          console.log(`     Subject: ${emailData.subject}`);
+          console.log(`     Date: ${emailData.date}`);
+
+          // CLIENT-SIDE FILTERING: Check if email matches all criteria
+          const senderMatch = emailData.sender && emailData.sender.toLowerCase().includes('sellergating@coupang.com');
+          const subjectMatch = emailData.subject && emailData.subject.includes('유통경로 확인 요청 안내');
+
+          // Check if user already replied (look for reply elements in DOM)
+          const hasReplied = await page.evaluate((userEmail) => {
+            // Check for user's email in reply section
+            const userReplySpan = document.querySelector(`span.gD[email="${userEmail}"]`);
+            // Check for "to Coupang" text
+            const toCoupangSpan = document.querySelector('span.hb');
+            const hasToCoupang = toCoupangSpan && toCoupangSpan.textContent.includes('to') &&
+                                toCoupangSpan.textContent.includes('Coupang');
+
+            return !!(userReplySpan && hasToCoupang);
+          }, email);
+
+          if (!senderMatch || !subjectMatch || hasReplied) {
+            console.log(`     ⚠️  Email doesn't match criteria - skipping`);
+            if (!senderMatch) console.log(`        - Wrong sender: ${emailData.sender}`);
+            if (!subjectMatch) console.log(`        - Wrong subject: ${emailData.subject}`);
+            if (hasReplied) console.log(`        - Already replied to this email`);
+
+            // Click "Older" button to move to next email
+            if (j < emailCount - 1) {
+              try {
+                const olderClicked = await page.evaluate(() => {
+                  // Try both English "Older" and Korean "예전"
+                  const olderButtons = document.querySelectorAll('div[aria-label="Older"], div[aria-label="예전"]');
+                  const visibleButton = Array.from(olderButtons).find(btn =>
+                    btn.offsetParent !== null && !btn.getAttribute('aria-disabled')
+                  );
+                  if (visibleButton) {
+                    visibleButton.click();
+                    return true;
+                  }
+                  return false;
+                });
+
+                if (olderClicked) {
+                  await page.waitForTimeout(2000);
+                } else {
+                  console.log(`        ⚠️  Older button not available`);
+                  break;
+                }
+              } catch (e) {
+                console.log(`        ⚠️  Failed to navigate to next email`);
+                break;
+              }
+            }
+            continue;
+          }
+
+          // Parse body for product IDs
+          const parsedData = parseEmailBody(emailData.bodyText);
+
+          // Try to extract brand from subject if not found in body
+          if (!parsedData.brand && emailData.subject) {
+            const subjectBrandMatch = emailData.subject.match(/_([가-힣a-zA-Z&\s]+)$/);
+            if (subjectBrandMatch) {
+              parsedData.brand = subjectBrandMatch[1].trim();
+            }
+          }
+
+          accountResults.emails.push({
+            subject: emailData.subject,
+            date: emailData.date,
+            type: parsedData.type,
+            brand: parsedData.brand,
+            products: parsedData.products
+          });
+
+          console.log(`     Type: ${parsedData.type}`);
+          if (parsedData.brand) {
+            console.log(`     Brand: ${parsedData.brand}`);
+          }
+          console.log(`     Products: ${parsedData.products.length} item(s)`);
+
+          // Display product details
+          if (parsedData.products.length > 0) {
+            parsedData.products.forEach((product, idx) => {
+              console.log(`       ${idx + 1}. ID: ${product.id} | ${product.name}`);
+            });
+          }
+
+          successCount++;
+
+          // Click "Older" button to move to next email
+          if (j < emailCount - 1) {
+            try {
+              const olderClicked = await page.evaluate(() => {
+                // Try both English "Older" and Korean "예전"
+                const olderButtons = document.querySelectorAll('div[aria-label="Older"], div[aria-label="예전"]');
+                const visibleButton = Array.from(olderButtons).find(btn =>
+                  btn.offsetParent !== null && !btn.getAttribute('aria-disabled')
+                );
+                if (visibleButton) {
+                  visibleButton.click();
+                  return true;
+                }
+                return false;
+              });
+
+              if (olderClicked) {
+                await page.waitForTimeout(2000);
+              } else {
+                console.log(`     ⚠️  Older button not available, end of emails`);
+                break;
+              }
+            } catch (e) {
+              console.log(`     ⚠️  Failed to navigate to next email`);
+              break;
+            }
+          }
+
+        } catch (error) {
+          errorCount++;
+          const errorMsg = error.message.split('\n')[0];
+          console.log(`     ⚠️  Error: ${errorMsg.substring(0, 80)}`);
+
+          // Try to recover and go back to list
+          try {
+            const currentUrl = page.url();
+
+            // If we're on an email page, try to go back
+            if (currentUrl.includes('mail.google.com/mail')) {
+              console.log(`     🔄 Attempting to recover...`);
+
+              // Try clicking back arrow in Gmail UI
+              const backClicked = await page.evaluate(() => {
+                const backButton = document.querySelector('div[aria-label="Back to Search results"], div[aria-label="검색결과로 돌아가기"]');
+                if (backButton) {
+                  backButton.click();
+                  return true;
+                }
+                return false;
+              });
+
+              if (!backClicked) {
+                // Use browser back if UI back button not found
+                await page.goBack({ timeout: 3000 });
+              }
+
+              await page.waitForTimeout(2000);
+            }
+          } catch (e) {
+            console.log(`     ⚠️  Could not recover, reloading search...`);
+            // Last resort: reload search page
+            try {
+              await page.goto(searchResultsUrl, {
+                waitUntil: 'domcontentloaded',
+                timeout: 10000
+              });
+              await page.waitForTimeout(2000);
+            } catch (reloadError) {
+              console.log(`     ❌ Failed to reload, skipping rest of emails for this account`);
+              break; // Exit the email loop for this account
+            }
+          }
+        }
+
+        // Show progress every 10 emails
+        if ((j + 1) % 10 === 0 || j + 1 === emailCount) {
+          console.log(`\n  📊 Progress: ${j + 1}/${emailCount} (✅ ${successCount} | ⚠️ ${errorCount})\n`);
+        }
+      }
+
+      allResults.push(accountResults);
+      console.log(`✅ Completed ${email}: ${successCount} successful, ${errorCount} errors\n`);
+
+    } catch (error) {
+      console.error(`❌ Error processing ${email}:`, error.message);
+    }
+  }
+
+  return allResults;
+}
+
+// Parse email body to extract product IDs and type
+function parseEmailBody(bodyText) {
+  const result = {
+    type: 'unknown',
+    brand: null,
+    products: []
+  };
+
+  // Try to extract brand from multiple patterns
+  // Pattern: "브랜드: XXX" or just "XXX" after "판매 브랜드"
+  let brandMatch = bodyText.match(/브랜드:\s*([^\n가-힣\s]{2,30})/);
+  if (!brandMatch) {
+    // Try to find brand in subject or body after "판매 브랜드"
+    brandMatch = bodyText.match(/판매 브랜드[:\s]*([가-힣a-zA-Z&\s]+?)[\n예시]/);
+  }
+  if (!brandMatch) {
+    // Try to extract from pattern like "A01294438_브랜드명"
+    brandMatch = bodyText.match(/A\d+_([가-힣a-zA-Z&\s]+)/);
+  }
+
+  // Pattern 1: Brand-based (■ 판매 브랜드)
+  if (bodyText.includes('■ 판매 브랜드') || bodyText.includes('판매 브랜드')) {
+    result.type = 'brand';
+
+    if (brandMatch) {
+      result.brand = brandMatch[1].trim();
+    }
+
+    // Extract example product IDs
+    const idMatches = bodyText.matchAll(/ID:\s*(\d+)\(([^)]+)\)/g);
+    for (const match of idMatches) {
+      result.products.push({
+        id: match[1],
+        name: match[2]
+      });
+    }
+  }
+  // Pattern 2 & 3: Single or Multiple items
+  else if (bodyText.includes('VendorInventory ID / Item Name') || bodyText.includes('ID:')) {
+    // Extract all product IDs
+    const idMatches = bodyText.matchAll(/ID:\s*(\d+)\(([^)]+)\)/g);
+    const products = [];
+
+    for (const match of idMatches) {
+      products.push({
+        id: match[1],
+        name: match[2]
+      });
+    }
+
+    result.products = products;
+
+    if (products.length === 0) {
+      result.type = 'unknown';
+    } else if (products.length === 1) {
+      result.type = 'single';
+    } else {
+      result.type = 'multiple';
+    }
+
+    // Check if it's actually a brand type by looking for brand indicators
+    if (brandMatch && (bodyText.includes('대상 상품:') || bodyText.includes('브랜드의 모든 상품'))) {
+      result.type = 'brand';
+      result.brand = brandMatch[1].trim();
+    }
+  }
+
+  return result;
+}
+
+// Save results to CSV
+function saveCoupangDistributionResults(results) {
+  if (results.length === 0) {
+    console.log('\n⚠️  No results to save.\n');
+    return;
+  }
+
+  const timestamp = new Date().toISOString().replace(/[:.]/g, '-').substring(0, 19);
+  const filename = `coupang_distribution_${timestamp}.csv`;
+
+  // Prepare CSV data
+  const csvRows = [
+    ['Account', 'Email Date', 'Subject', 'Type', 'Brand', 'Product ID', 'Product Name']
+  ];
+
+  for (const accountResult of results) {
+    for (const email of accountResult.emails) {
+      if (email.products.length === 0) {
+        // No products found
+        csvRows.push([
+          accountResult.account,
+          email.date,
+          email.subject,
+          email.type,
+          email.brand || '',
+          '',
+          ''
+        ]);
+      } else {
+        // Add each product as a row
+        for (const product of email.products) {
+          csvRows.push([
+            accountResult.account,
+            email.date,
+            email.subject,
+            email.type,
+            email.brand || '',
+            product.id,
+            product.name
+          ]);
+        }
+      }
+    }
+  }
+
+  // Convert to CSV string
+  const csvContent = stringify(csvRows);
+
+  // Save to file
+  fs.writeFileSync(filename, csvContent);
+
+  console.log(`\n✅ Results saved to: ${filename}`);
+  console.log(`   Total accounts: ${results.length}`);
+  console.log(`   Total emails: ${results.reduce((sum, r) => sum + r.emails.length, 0)}`);
+  console.log(`   Total products: ${csvRows.length - 1}\n`);
+
+  return filename;
+}
+
 async function processCategories(categoryList, context, page) {
   // Create screenshots folder if not exists
   const screenshotsDir = 'screenshots';
@@ -1160,7 +1750,7 @@ async function main() {
   while (true) {
     const choice = await showMainMenu();
 
-    if (choice === '4') {
+    if (choice === '5') {
       console.log('\n👋 Exiting...');
       if (browser) {
         await browser.close();
@@ -1200,7 +1790,27 @@ async function main() {
       continue;
     }
 
-    console.log('❌ Invalid choice. Please select 1, 2, 3, or 4.');
+    if (choice === '4') {
+      try {
+        // Open Gmail tabs for sending distribution channel confirmation emails
+        const gmailPages = await openGmailTabs(context);
+
+        if (gmailPages.length > 0) {
+          // Extract Coupang distribution requests
+          const results = await extractCoupangDistributionRequests(gmailPages);
+
+          // Save results to CSV
+          if (results.length > 0) {
+            saveCoupangDistributionResults(results);
+          }
+        }
+      } catch (error) {
+        console.error('❌ Error:', error.message);
+      }
+      continue;
+    }
+
+    console.log('❌ Invalid choice. Please select 1, 2, 3, 4, or 5.');
   }
 }
 
